@@ -1,0 +1,13 @@
+#!/usr/bin/python
+
+"""
+util.py
+
+The utility tool for managing the configs JSONs and the build
+of the actual tool.
+
+Author: Curtis Millar
+Date:   24 July 2016
+
+Copyright (c) Curtis Millar 2016. All Rights Reserved.
+"""

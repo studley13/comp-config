@@ -46,10 +46,10 @@ class Config:
         saveJSON(self.__asObject(), file(self.__path, 'w'))
 
     def getNameHost(self, name):
-        pass
+        return None
 
     def getMacHost(self, addr):
-        pass
+        return None
 
     def getGroup(self, groupName):
         pass
