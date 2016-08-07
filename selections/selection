@@ -9,8 +9,8 @@
       1 accountsservice-ubuntu-schemas
       1 accountsservice-ubuntu-touch-schemas
       1 activity-log-manager-control-center
-      1 adwaita-icon-theme
       1 aglfn
+      1 alacarte
       1 alsa-oss
       1 android-tools-adb
       1 android-tools-fastboot
@@ -18,16 +18,12 @@
       1 anthy
       1 anthy-common
       1 ant-optional
-      1 apache2
-      1 apache2-bin
-      1 apache2-data
+      1 apache2-utils
       1 apparmor-easyprof
       1 apparmor-easyprof-ubuntu
       1 appmenu-qt
       1 appmenu-qt:amd64
       1 appstream
-      1 aptitude
-      1 aptitude-common
       1 apt-mirror
       1 apt-xapian-index
       1 ardour
@@ -47,6 +43,8 @@
       1 bison
       1 blender
       1 blender-codecs-ffmpeg2.2
+      1 blt
+      1 bluej
       1 bluez-alsa:amd64
       1 bluez-obexd
       1 bombono-dvd
@@ -69,48 +67,66 @@
       1 checkbox-ng-service
       1 chromium-browser
       1 chromium-browser-l10n
+      1 cifs-utils
       1 clang
       1 clang-3.4
+      1 claws-mail
+      1 claws-mail-i18n
       1 clementine
       1 click
       1 click-apparmor
       1 cli-common
+      1 coinor-libcbc3
+      1 coinor-libcgl1
+      1 coinor-libclp1
+      1 coinor-libcoinmp1:armhf
+      1 coinor-libcoinutils3
+      1 coinor-libosi1
       1 colord-data
       1 comerr-dev
       1 compiz-plugins-default
       1 compiz-plugins-default:amd64
       1 consolekit
-      1 console-setup-linux
       1 cpp-4.8
+      1 cpp-4.9
       1 cpp-5
       1 cpu-checker
+      1 cryptsetup-bin
       1 csvtool
       1 dbconfig-common
+      1 dconf-gsettings-backend:armhf
       1 dcraw
       1 dctrl-tools
+      1 debconf-utils
       1 debian-archive-keyring
       1 debian-keyring
+      1 debian-reference-common
+      1 debian-reference-en
       1 debootstrap
       1 default-jdk
       1 default-jre
       1 default-jre-headless
       1 deja-dup-backend-gvfs
+      1 desktop-base
       1 detox
       1 devscripts
+      1 dhcpcd5
       1 dialog
+      1 dillo
       1 dirmngr
       1 distro-info
       1 dkms
-      1 dmsetup
-      1 dns-root-data
+      1 dnsmasq
       1 docbook-xml
       1 docbook-xsl
       1 dosbox
+      1 dphys-swapfile
       1 dput
       1 dropbox
       1 duplicity
       1 dvdauthor
       1 dvd+rw-tools
+      1 e2fslibs:armhf
       1 easytag
       1 ebtables
       1 eclipse
@@ -120,26 +136,34 @@
       1 eclipse-platform-data
       1 eclipse-rcp
       1 efibootmgr
-      1 emacsen-common
       1 empathy
       1 empathy-common
       1 enca
       1 entangle
-      1 esound-common
+      1 epiphany-browser
+      1 epiphany-browser-data
       1 exfat-fuse
       1 exfat-utils
       1 exifprobe
       1 exo-utils
+      1 fake-hwclock
       1 fastjar
       1 fatsort
+      1 fbset
       1 ffmpeg
       1 filezilla
       1 filezilla-common
       1 finger
+      1 firmware-atheros
+      1 firmware-brcm80211
+      1 firmware-libertas
+      1 firmware-ralink
+      1 firmware-realtek
       1 flac
       1 folks-common
-      1 fonts-dejavu-extra
+      1 fonts-dejavu
       1 fonts-droid
+      1 fonts-font-awesome
       1 fonts-guru
       1 fonts-guru-extra
       1 fonts-horai-umefont
@@ -147,6 +171,7 @@
       1 fonts-lyx
       1 fonts-mathjax
       1 fonts-noto-cjk
+      1 fonts-roboto
       1 fonts-stix
       1 fonts-symbola
       1 fonts-takao-gothic
@@ -183,21 +208,29 @@
       1 fwupdate
       1 fwupdate-signed
       1 g++-4.8
+      1 g++-4.9
       1 g++-5
+      1 galculator
       1 gawk
+      1 gcc-4.6-base:armhf
+      1 gcc-4.7-base:armhf
       1 gcc-4.8
       1 gcc-4.8-base:amd64
+      1 gcc-4.8-base:armhf
       1 gcc-4.8-base:i386
+      1 gcc-4.9
       1 gcc-4.9-base:amd64
+      1 gcc-4.9-base:armhf
       1 gcc-4.9-base:i386
       1 gcc-5
       1 gcc-5-base:amd64
       1 gcc-6-base:amd64
-      1 gdbserver
+      1 gdebi-core
       1 geany
       1 geany-common
       1 ghc
       1 ghex
+      1 giblib1:armhf
       1 gimp
       1 gimp-data
       1 gimp-help-common
@@ -217,21 +250,22 @@
       1 gir1.2-evince-3.0
       1 gir1.2-freedesktop
       1 gir1.2-freedesktop:amd64
+      1 gir1.2-freedesktop:armhf
       1 gir1.2-gconf-2.0
       1 gir1.2-gdata-0.0
       1 gir1.2-gdata-0.0:amd64
-      1 gir1.2-gdkpixbuf-2.0
       1 gir1.2-gdkpixbuf-2.0:amd64
       1 gir1.2-gee-0.8
       1 gir1.2-ges-1.0
       1 gir1.2-glib-2.0
       1 gir1.2-glib-2.0:amd64
-      1 gir1.2-gmenu-3.0
+      1 gir1.2-glib-2.0:armhf
       1 gir1.2-gnomebluetooth-1.0
       1 gir1.2-goa-1.0
       1 gir1.2-goa-1.0:amd64
       1 gir1.2-gtk-3.0
       1 gir1.2-gtk-3.0:amd64
+      1 gir1.2-gtk-3.0:armhf
       1 gir1.2-gtkclutter-1.0
       1 gir1.2-gtksource-3.0
       1 gir1.2-gtksource-3.0:amd64
@@ -247,6 +281,7 @@
       1 gir1.2-networkmanager-1.0
       1 gir1.2-pango-1.0
       1 gir1.2-pango-1.0:amd64
+      1 gir1.2-pango-1.0:armhf
       1 gir1.2-peas-1.0
       1 gir1.2-peas-1.0:amd64
       1 gir1.2-rb-3.0
@@ -265,18 +300,19 @@
       1 gir1.2-webkit-3.0
       1 gir1.2-wnck-3.0
       1 gir1.2-wnck-3.0:amd64
-      1 gksu
+      1 git-core
+      1 glib-networking:armhf
       1 gnome-calendar
       1 gnome-cards-data
       1 gnome-color-chooser
       1 gnome-contacts
       1 gnome-control-center-shared-data
-      1 gnome-icon-theme
       1 gnome-icon-theme-full
-      1 gnome-icon-theme-symbolic
       1 gnome-software
       1 gnome-software-common
       1 gnome-sushi
+      1 gnome-themes-standard:armhf
+      1 gnome-themes-standard-data
       1 gnomine
       1 gnuplot
       1 gnuplot-x11
@@ -286,7 +322,9 @@
       1 gparted
       1 gpgv2
       1 gphoto2
+      1 gpicview
       1 graphviz
+      1 greenfoot
       1 grilo-plugins-0.2-base:amd64
       1 groff
       1 growisofs
@@ -297,32 +335,46 @@
       1 grub-pc
       1 grub-pc-bin
       1 gsettings-ubuntu-touch-schemas
-      1 gsfonts-x11
       1 gstreamer0.10-alsa:amd64
+      1 gstreamer0.10-alsa:armhf
       1 gstreamer0.10-fluendo-mp3:amd64
       1 gstreamer0.10-nice:amd64
       1 gstreamer0.10-plugins-bad:amd64
       1 gstreamer0.10-plugins-bad-multiverse
       1 gstreamer0.10-plugins-base:amd64
       1 gstreamer0.10-plugins-base-apps
+      1 gstreamer0.10-plugins-base:armhf
       1 gstreamer0.10-plugins-good:amd64
       1 gstreamer0.10-plugins-ugly:amd64
       1 gstreamer0.10-pulseaudio:amd64
       1 gstreamer0.10-x:amd64
+      1 gstreamer1.0-alsa:armhf
       1 gstreamer1.0-clutter
       1 gstreamer1.0-clutter-3.0
       1 gstreamer1.0-gnonlin
+      1 gstreamer1.0-libav:armhf
       1 gstreamer1.0-nice:amd64
+      1 gstreamer1.0-omx
+      1 gstreamer1.0-plugins-bad:armhf
+      1 gstreamer1.0-plugins-base:armhf
+      1 gstreamer1.0-plugins-good:armhf
       1 gstreamer1.0-plugins-ugly-amr:amd64
+      1 gstreamer1.0-x:armhf
       1 gstreamer-tools
       1 gtk2-engines:amd64
+      1 gtk2-engines:armhf
+      1 gtk2-engines-clearlookspix:armhf
+      1 gtk2-engines-pixbuf:armhf
       1 gtk3-engines-unico:amd64
       1 gtkwave
       1 guile-2.0-libs
       1 guile-2.0-libs:amd64
+      1 gvfs:armhf
+      1 gvfs-libs:armhf
       1 gxine
       1 handbrake
       1 hardinfo
+      1 hardlink
       1 hexter
       1 hfsplus
       1 hfsprogs
@@ -341,11 +393,14 @@
       1 icontool
       1 icoutils
       1 id3tool
+      1 idle
+      1 idle3
+      1 idle-python2.7
+      1 idle-python3.4
       1 ienglish-common
       1 iftop
       1 imagemagick-6.q16
       1 indicator-network
-      1 init
       1 initramfs-tools-core
       1 inkscape
       1 intel-linux-graphics-installer
@@ -355,13 +410,9 @@
       1 ipxe-qemu
       1 ispell
       1 iucode-tool
-      1 jackd
-      1 jackd2
       1 jackd2-firewire
       1 jarwrapper
-      1 java-common
       1 javahelp2
-      1 javascript-common
       1 java-wrappers
       1 jayatana
       1 junit
@@ -387,72 +438,111 @@
       1 language-pack-gnome-ja-base
       1 language-pack-ja
       1 language-pack-ja-base
+      1 leafpad
       1 lib32gcc1
       1 liba11y-profile-manager-0.1-0:amd64
       1 liba11y-profile-manager-data
       1 liba52-0.7.4
       1 liba52-0.7.4:amd64
+      1 libaa1:armhf
+      1 libabw-0.1-1
       1 libabw-0.1-1v5:amd64
       1 libaccount-plugin-1.0-0
       1 libaccount-plugin-1.0-0:amd64
       1 libaccounts-qt5-1
       1 libaccounts-qt5-1:amd64
+      1 libacl1:armhf
       1 libaio1:amd64
+      1 libalgorithm-c3-perl
       1 libamd2.3.1:amd64
       1 libanthy0:amd64
-      1 libapache2-mod-php5
       1 libapache-pom-java
       1 libappindicator1
       1 libappstream3:amd64
       1 libappstream-glib8:amd64
       1 libapr1:amd64
+      1 libapr1:armhf
       1 libaprutil1:amd64
+      1 libaprutil1:armhf
       1 libaprutil1-dbd-sqlite3:amd64
+      1 libaprutil1-dbd-sqlite3:armhf
       1 libaprutil1-ldap:amd64
+      1 libaprutil1-ldap:armhf
       1 libapt-inst1.5:amd64
+      1 libapt-inst1.5:armhf
       1 libapt-inst2.0:amd64
       1 libapt-pkg4.12:amd64
+      1 libapt-pkg4.12:armhf
       1 libapt-pkg5.0:amd64
-      1 libarchive-extract-perl
+      1 libarchive13:armhf
       1 libasan0:amd64
+      1 libasan1:armhf
       1 libasan2:amd64
       1 libasm3-java
+      1 libasn1-8-heimdal:armhf
       1 libasn1-8-heimdal:i386
+      1 libasound2:armhf
       1 libasound2:i386
       1 libasound2-plugins:i386
       1 libaspectj-java
       1 libaspell15
       1 libaspell15:amd64
+      1 libaspell15:armhf
       1 libasprintf0c2:amd64
+      1 libasprintf0c2:armhf
       1 libasprintf0v5:amd64
       1 libass4:amd64
       1 libass5:amd64
+      1 libass5:armhf
+      1 libassuan0:armhf
+      1 libasyncns0:armhf
       1 libasyncns0:i386
+      1 libatasmart4:armhf
+      1 libatk1.0-0:armhf
+      1 libatk-bridge2.0-0:armhf
       1 libatkmm-1.6-1:amd64
       1 libatkmm-1.6-1v5:amd64
       1 libatk-wrapper-java
       1 libatk-wrapper-java-jni:amd64
+      1 libatlas3-base
       1 libatm1:amd64
+      1 libatomic1:armhf
+      1 libatspi2.0-0:armhf
       1 libattica0.4:amd64
+      1 libattr1:armhf
       1 libaubio4
+      1 libaudio2:armhf
       1 libaudio2:i386
       1 libaudiofile1:amd64
+      1 libaudiofile1:armhf
       1 libaudio-scrobbler-perl
+      1 libaudit1:armhf
       1 libaugeas0
       1 libautodie-perl
+      1 libavahi-client3:armhf
       1 libavahi-client3:i386
+      1 libavahi-common3:armhf
       1 libavahi-common3:i386
+      1 libavahi-common-data:armhf
       1 libavahi-common-data:i386
       1 libavahi-compat-libdnssd1:amd64
+      1 libavahi-core7:armhf
+      1 libavahi-glib1:armhf
       1 libavahi-gobject0:amd64
+      1 libavahi-gobject0:armhf
+      1 libavc1394-0:armhf
+      1 libavcodec56:armhf
       1 libavcodec-extra-54:amd64
       1 libavcodec-ffmpeg56:amd64
       1 libavcodec-ffmpeg-extra56:amd64
       1 libavdevice53:amd64
       1 libavfilter3:amd64
       1 libavformat54:amd64
+      1 libavformat56:armhf
       1 libavresample1:amd64
+      1 libavresample2:armhf
       1 libavutil52:amd64
+      1 libavutil54:armhf
       1 libbabeltrace1:amd64
       1 libbabeltrace-ctf1:amd64
       1 libbabl-0.1-0:amd64
@@ -463,66 +553,90 @@
       1 libbcel-java
       1 libbdplus0:amd64
       1 libbind9-140:amd64
-      1 libbind9-90
       1 libbison-dev:amd64
       1 libbit-vector-perl
-      1 libblas3
+      1 libblas-common
+      1 libblkid1:armhf
       1 libblocksruntime0
+      1 libbluetooth3:armhf
+      1 libbluray1:armhf
       1 libbonobo2-0:amd64
       1 libbonobo2-common
       1 libbonoboui2-0:amd64
       1 libbonoboui2-common
+      1 libboost-atomic1.55.0:armhf
       1 libboost-date-time1.54.0:amd64
+      1 libboost-date-time1.55.0:armhf
       1 libboost-date-time1.58.0:amd64
       1 libboost-filesystem1.54.0:amd64
+      1 libboost-filesystem1.55.0:armhf
       1 libboost-filesystem1.58.0:amd64
+      1 libboost-iostreams1.49.0
+      1 libboost-iostreams1.50.0
+      1 libboost-iostreams1.53.0
       1 libboost-iostreams1.54.0:amd64
+      1 libboost-iostreams1.54.0:armhf
+      1 libboost-iostreams1.55.0:armhf
       1 libboost-iostreams1.58.0:amd64
       1 libboost-locale1.54.0:amd64
       1 libboost-program-options1.54.0:amd64
+      1 libboost-program-options1.55.0:armhf
       1 libboost-regex1.54.0:amd64
+      1 libboost-regex1.55.0:armhf
       1 libboost-serialization1.54.0:amd64
       1 libboost-signals1.54.0:amd64
       1 libboost-system1.54.0:amd64
+      1 libboost-system1.55.0:armhf
       1 libboost-system1.58.0:amd64
       1 libboost-thread1.54.0:amd64
+      1 libboost-thread1.55.0:armhf
       1 libbrasero-media3-1
       1 libbs2b0
       1 libbs2b0:amd64
+      1 libbsd0:armhf
       1 libbsd-dev
       1 libburn4
+      1 libbz2-1.0:armhf
+      1 libc6:armhf
+      1 libc6-dbg:armhf
+      1 libc6-dev:armhf
       1 libc6-i386
       1 libc6:i386
+      1 libcaca0:armhf
+      1 libcairo2:armhf
+      1 libcairo-gobject2:armhf
       1 libcairomm-1.0-1:amd64
       1 libcairomm-1.0-1v5:amd64
       1 libcairo-perl
       1 libcamd2.3.1:amd64
       1 libcamel-1.2-45
       1 libcamel-1.2-54:amd64
+      1 libcanberra0:armhf
+      1 libcanberra-gtk3-0:armhf
+      1 libcap2:armhf
       1 libcapi20-3:amd64
       1 libcapi20-3:i386
       1 libcap-ng0
       1 libcap-ng0:amd64
+      1 libcap-ng0:armhf
       1 libcapnp-0.4.0:amd64
       1 libc-ares2:amd64
+      1 libc-ares2:armhf
       1 libcarp-clan-perl
       1 libcc1-0:amd64
       1 libccolamd2.8.0:amd64
       1 libcdaudio1
       1 libcddb2
       1 libcddb-get-perl
-      1 libcdio13
       1 libcdio13:amd64
-      1 libcdio-cdda1
       1 libcdio-cdda1:amd64
-      1 libcdio-paranoia1
       1 libcdio-paranoia1:amd64
       1 libcdk5
+      1 libcdparanoia0:armhf
       1 libcdr-0.0-0
+      1 libcdr-0.1-1
       1 libcdr-0.1-1:amd64
       1 libcdt5
-      1 libcgi-fast-perl
-      1 libcgi-pm-perl
       1 libcgmanager0:i386
       1 libcgraph6
       1 libcheese7:amd64
@@ -531,22 +645,27 @@
       1 libcheese-gtk25:amd64
       1 libchm1
       1 libcholmod2.1.2:amd64
+      1 libchromaprint0:armhf
       1 libchromaprint-tools
       1 libcilkrts5:amd64
       1 libck-connector0:amd64
       1 libclang1-3.4:amd64
       1 libclang-common-3.4-dev
+      1 libclass-c3-perl
+      1 libclass-c3-xs-perl
       1 libclass-data-inheritable-perl
       1 libclass-method-modifiers-perl
       1 libclick-0.4-0:amd64
       1 libcloog-isl4:amd64
+      1 libcloog-isl4:armhf
       1 libclucene-contribs1:amd64
+      1 libclucene-contribs1:armhf
       1 libclucene-contribs1v5:amd64
       1 libclucene-core1:amd64
+      1 libclucene-core1:armhf
       1 libclucene-core1v5:amd64
       1 libclutter-gst-2.0-0:amd64
       1 libclutter-gst-3.0-0:amd64
-      1 libcmis-0.4-4
       1 libcmis-0.5-5v5:amd64
       1 libcogl15:amd64
       1 libcogl20:amd64
@@ -554,13 +673,16 @@
       1 libcogl-pango20:amd64
       1 libcogl-path20:amd64
       1 libcolamd2.8.0:amd64
+      1 libcolamd2.8.0:armhf
       1 libcolamd2.9.1:amd64
       1 libcolord1:amd64
       1 libcolord2:amd64
+      1 libcolord2:armhf
       1 libcolorhug1:amd64
       1 libcolorhug2:amd64
       1 libcolumbus1:amd64
       1 libcolumbus1v5:amd64
+      1 libcomerr2:armhf
       1 libcomerr2:i386
       1 libcommons-beanutils-java
       1 libcommons-cli-java
@@ -575,64 +697,98 @@
       1 libcommons-logging-java
       1 libcommons-parent-java
       1 libcommons-pool-java
+      1 libcompfaceg1
       1 libcompizconfig0
       1 libcompizconfig0:amd64
       1 libconfig++9:amd64
       1 libconfig-inifiles-perl
       1 libcontent-hub0:amd64
+      1 libcpan-meta-perl
+      1 libcroco3:armhf
       1 libcrypt-openssl-bignum-perl
       1 libcrypt-openssl-rsa-perl
       1 libcrypt-passwdmd5-perl
       1 libcryptsetup4:amd64
+      1 libcryptsetup4:armhf
       1 libcryptui0a:amd64
       1 libcuda1-352-updates
+      1 libcups2:armhf
       1 libcups2:i386
+      1 libcupsfilters1:armhf
+      1 libcupsimage2:armhf
+      1 libcurl3:armhf
+      1 libcurl3-gnutls:armhf
       1 libcurl4-openssl-dev:amd64
       1 libcwidget3
+      1 libcwidget3:armhf
+      1 libcwiid1
       1 libdaemon0
       1 libdaemon0:amd64
+      1 libdaemon0:armhf
       1 libdata-alias-perl
+      1 libdata-optlist-perl
       1 libdata-random-perl
+      1 libdata-section-perl
       1 libdate-calc-perl
       1 libdate-calc-xs-perl
+      1 libdatrie1:armhf
+      1 libdb5.3:armhf
       1 libdb5.3:i386
       1 libdb5.3-java
       1 libdb5.3-java-jni:amd64
       1 libdbd-mysql-perl
+      1 libdbi1:armhf
       1 libdbi-perl
       1 libdb-java
       1 libdb-je-java
+      1 libdbus-1-3:armhf
       1 libdbus-1-3:i386
       1 libdbus-cpp2:amd64
+      1 libdbus-glib-1-2:armhf
       1 libdbusmenu-qt2:i386
+      1 libdc1394-22:armhf
+      1 libdca0:armhf
+      1 libdconf1:armhf
       1 libde265-0:amd64
+      1 libdebconfclient0:armhf
       1 libdecoration0
       1 libdecoration0:amd64
       1 libdee-qt5-3:amd64
+      1 libdevmapper1.02.1:armhf
+      1 libdevmapper-event1.02.1:armhf
       1 libdfu1:amd64
       1 libdirac-encoder0:amd64
       1 libdirectfb-1.2-9:amd64
+      1 libdirectfb-1.2-9:armhf
       1 libdiscid0:amd64
       1 libdistro-info-perl
       1 libdlrestrictions1
       1 libdmapsharing-3.0-2
       1 libdmapsharing-3.0-2:amd64
-      1 libdns100
       1 libdns162:amd64
+      1 libdns-export100
       1 libdns-export162
       1 libdom4j-java
       1 libdouble-conversion1v5:amd64
+      1 libdrm2:armhf
       1 libdrm2:i386
       1 libdrm-amdgpu1:amd64
+      1 libdrm-freedreno1:armhf
       1 libdrm-intel1:i386
+      1 libdrm-nouveau2:armhf
       1 libdrm-nouveau2:i386
+      1 libdrm-radeon1:armhf
       1 libdrm-radeon1:i386
+      1 libdv4:armhf
       1 libdvbpsi8:amd64
       1 libdvdcss2
+      1 libdvdnav4:armhf
+      1 libdvdread4:armhf
       1 libeasymock-java
       1 libebackend-1.2-10:amd64
       1 libebackend-1.2-7
       1 libebml4:amd64
+      1 libe-book-0.1-1
       1 libe-book-0.1-1:amd64
       1 libebook-1.2-14
       1 libebook-1.2-16:amd64
@@ -649,43 +805,57 @@
       1 libedataserver-1.2-18
       1 libedataserver-1.2-21:amd64
       1 libedataserverui-1.2-1:amd64
+      1 libedit2:armhf
       1 libedit2:i386
       1 libefivar0:amd64
+      1 libegl1-mesa:armhf
       1 libegl1-mesa-drivers:amd64
+      1 libelf1:armhf
       1 libelf1:i386
       1 libelfg0:amd64
+      1 libelfg0:armhf
       1 libenca0:amd64
+      1 libenca0:armhf
+      1 libenchant1c2a:armhf
+      1 libeot0
       1 libeot0:amd64
-      1 libepoxy0
       1 libepoxy0:amd64
       1 libept1.4.12:amd64
       1 libepub0
       1 libequinox-osgi-java
       1 libesd0:amd64
+      1 libesd0:armhf
+      1 libetonyek-0.1-1
       1 libetonyek-0.1-1:amd64
+      1 libetpan17:armhf
+      1 libevdev2
       1 libevdev2:amd64
       1 libevdocument3-4
       1 libevdocument3-4:amd64
+      1 libevent-2.0-5:armhf
       1 libevview3-3
       1 libevview3-3:amd64
+      1 libexif12:armhf
       1 libexif12:i386
       1 libexiv2-12
       1 libexiv2-14:amd64
       1 libexo-1-0:amd64
       1 libexo-common
       1 libexo-helpers
+      1 libexpat1:armhf
       1 libexpat1-dev:amd64
+      1 libexpat1-dev:armhf
       1 libexpat1:i386
       1 libexporter-lite-perl
       1 libexporter-tiny-perl
-      1 libexttextcat-2.0-0
       1 libexttextcat-2.0-0:amd64
       1 libextutils-depends-perl
       1 libextutils-pkgconfig-perl
       1 libfaac0:amd64
+      1 libfaad2:armhf
+      1 libfakeroot:armhf
       1 libfarstream-0.1-0:amd64
       1 libfarstream-0.2-2:amd64
-      1 libfcgi-perl
       1 libfcitx-config4:amd64
       1 libfcitx-gclient0:amd64
       1 libfcitx-utils0:amd64
@@ -699,15 +869,32 @@
       1 libfelix-shell-java
       1 libfelix-utils-java
       1 libffado2
+      1 libffi5:armhf
+      1 libffi6:armhf
       1 libffi6:i386
       1 libffi-dev:amd64
+      1 libfftw3-double3:armhf
+      1 libfftw3-single3:armhf
       1 libfile-which-perl
       1 libflac++6:amd64
+      1 libflac8:armhf
       1 libflac8:i386
+      1 libflite1:armhf
+      1 libfltk1.3:armhf
+      1 libfluidsynth1:armhf
+      1 libfm4:armhf
+      1 libfm-data
+      1 libfm-extra4:armhf
+      1 libfm-gtk4:armhf
+      1 libfm-gtk-data
+      1 libfm-modules:armhf
       1 libfolks25:amd64
       1 libfolks-eds25:amd64
       1 libfolks-telepathy25:amd64
+      1 libfontconfig1:armhf
       1 libfontconfig1:i386
+      1 libfontenc1:armhf
+      1 libfreehand-0.1-1
       1 libfreehand-0.1-1:amd64
       1 libfreerdp1:amd64
       1 libfreerdp-cache1.1:amd64
@@ -720,35 +907,49 @@
       1 libfreerdp-locale1.1:amd64
       1 libfreerdp-primitives1.1:amd64
       1 libfreerdp-utils1.1:amd64
+      1 libfreetype6:armhf
+      1 libfreetype6-dev
       1 libfreetype6:i386
+      1 libfribidi0:armhf
       1 libfriends0:amd64
       1 libfs6:amd64
       1 libftgl2:amd64
+      1 libfuse2:armhf
       1 libfwup0:amd64
       1 libfwupd1:amd64
       1 libgaminggear0
       1 libgarcon-1-0
       1 libgarcon-common
       1 libgavl1:amd64
+      1 libgbm1:armhf
       1 libgcab-1.0-0:amd64
+      1 libgcc1:armhf
       1 libgcc1:i386
       1 libgcc-4.8-dev:amd64
+      1 libgcc-4.9-dev:armhf
       1 libgcc-5-dev:amd64
       1 libgconf2.0-cil
       1 libgconf2-4:amd64
+      1 libgconf-2-4:armhf
       1 libgcrypt11:amd64
       1 libgcrypt11-dev
       1 libgcrypt11:i386
       1 libgcrypt20:amd64
+      1 libgcrypt20:armhf
+      1 libgd3:armhf
       1 libgd3:i386
       1 libgdata13
       1 libgdata22:amd64
+      1 libgdbm3:armhf
       1 libgdbm-dev
       1 libgdiplus
+      1 libgdk-pixbuf2.0-0:armhf
       1 libgd-perl
       1 libgee2:amd64
       1 libgegl-0.2-0:amd64
+      1 libgeoclue0:armhf
       1 libgeocode-glib0:amd64
+      1 libgeoip1:armhf
       1 libgeonames0:amd64
       1 libgeronimo-jpa-2.0-spec-java
       1 libgeronimo-jta-1.1-spec-java
@@ -757,33 +958,41 @@
       1 libgetopt-java
       1 libgflags2
       1 libgfortran3:amd64
+      1 libgfortran3:armhf
       1 libgif4:amd64
+      1 libgif4:armhf
       1 libgif4:i386
       1 libgimp2.0
       1 libgirepository-1.0-1
       1 libgirepository-1.0-1:amd64
+      1 libgirepository-1.0-1:armhf
       1 libgjs0e
-      1 libgksu2-0
       1 libgl1-mesa-dri:i386
+      1 libgl1-mesa-glx:armhf
       1 libgl1-mesa-glx:i386
       1 libglade2-0:amd64
       1 libglade2.0-cil
       1 libglademm-2.4-1c2a
       1 libglamor0:amd64
+      1 libglapi-mesa:armhf
       1 libglapi-mesa:i386
       1 libgles2-mesa:amd64
       1 libglew1.10:amd64
+      1 libglew1.10:armhf
       1 libglew1.13:amd64
       1 libglewmx1.10:amd64
       1 libglewmx1.13:amd64
+      1 libglib2.0-0:armhf
       1 libglib2.0-0:i386
       1 libglib2.0-cil
       1 libglibmm-2.4-1c2a:amd64
       1 libglibmm-2.4-1v5:amd64
       1 libglib-perl
+      1 libgltf-0.0-0
+      1 libglu1-mesa:armhf
       1 libglu1-mesa:i386
-      1 libgme0
       1 libgme0:amd64
+      1 libgmp10:armhf
       1 libgmp-dev:amd64
       1 libgmpxx4ldbl:amd64
       1 libgnome2-0:amd64
@@ -800,11 +1009,12 @@
       1 libgnomecanvas2-common
       1 libgnomecanvasmm-2.6-1c2a
       1 libgnome-control-center1
+      1 libgnome-desktop-3-10
       1 libgnome-desktop-3-12:amd64
       1 libgnome-desktop-3-7
       1 libgnomekbd8
       1 libgnomekbd8:amd64
-      1 libgnome-menu-3-0
+      1 libgnome-keyring0:armhf
       1 libgnome-menu-3-0:amd64
       1 libgnomeui-0:amd64
       1 libgnomeui-common
@@ -816,22 +1026,32 @@
       1 libgnutls26:i386
       1 libgnutls28:amd64
       1 libgnutls30:amd64
+      1 libgnutls-deb0-28:armhf
       1 libgnutls-dev
+      1 libgnutls-openssl27:armhf
       1 libgnutlsxx27:amd64
+      1 libgoa-1.0-0b:armhf
       1 libgom-1.0-0:amd64
       1 libgom-1.0-common
+      1 libgomp1:armhf
       1 libgoocanvas3
       1 libgoocanvas-common
       1 libgoo-canvas-perl
       1 libgoogle-glog0
+      1 libgpg-error0:armhf
       1 libgpg-error0:i386
       1 libgpg-error-dev
+      1 libgpgme11:armhf
+      1 libgphoto2-6:armhf
       1 libgphoto2-6:i386
       1 libgphoto2-port10:amd64
+      1 libgphoto2-port10:armhf
       1 libgphoto2-port10:i386
       1 libgphoto2-port12:amd64
+      1 libgpm2:armhf
       1 libgpm2:i386
       1 libgraphicsmagick3
+      1 libgraphite2-3:armhf
       1 libgrilo-0.2-1:amd64
       1 libgrip0
       1 libgroupsock1
@@ -839,24 +1059,33 @@
       1 libgs9:amd64
       1 libgsasl7
       1 libgsl0ldbl
+      1 libgsm1:armhf
       1 libgsoap4:amd64
+      1 libgssapi3-heimdal:armhf
       1 libgssapi3-heimdal:i386
+      1 libgssapi-krb5-2:armhf
       1 libgssapi-krb5-2:i386
       1 libgssdp-1.0-3
       1 libgssglue1:amd64
       1 libgssrpc4:amd64
+      1 libgstreamer0.10-0:armhf
       1 libgstreamer0.10-0:i386
+      1 libgstreamer1.0-0:armhf
       1 libgstreamer1.0-0:i386
       1 libgstreamer-plugins-bad0.10-0:amd64
+      1 libgstreamer-plugins-bad1.0-0:armhf
       1 libgstreamer-plugins-base0.10-0:amd64
+      1 libgstreamer-plugins-base0.10-0:armhf
       1 libgstreamer-plugins-base0.10-0:i386
+      1 libgstreamer-plugins-base1.0-0:armhf
       1 libgstreamer-plugins-base1.0-0:i386
+      1 libgtk2.0-0:armhf
       1 libgtk2.0-cil
       1 libgtk2-appindicator-perl
       1 libgtk2-imageview-perl
       1 libgtk2-perl
       1 libgtk2-unique-perl
-      1 libgtkglext1
+      1 libgtk-3-0:armhf
       1 libgtkglext1:amd64
       1 libgtkhex-3-0
       1 libgtkimageview0
@@ -868,9 +1097,9 @@
       1 libgtk-vnc-1.0-0
       1 libgtk-vnc-2.0-0
       1 libgtop-2.0-10:amd64
-      1 libgtop2-7
       1 libgucharmap-2-90-7
       1 libgucharmap-2-90-7:amd64
+      1 libgudev-1.0-0:armhf
       1 libgupnp-1.0-4
       1 libgupnp-igd-1.0-4:amd64
       1 libgvc6
@@ -880,43 +1109,59 @@
       1 libgweather-3-6:amd64
       1 libhamcrest-java
       1 libhardware2
+      1 libharfbuzz0b:armhf
+      1 libharfbuzz-icu0:armhf
+      1 libhcrypto4-heimdal:armhf
       1 libhcrypto4-heimdal:i386
       1 libhdb9-heimdal:amd64
+      1 libheimbase1-heimdal:armhf
       1 libheimbase1-heimdal:i386
+      1 libheimntlm0-heimdal:armhf
       1 libheimntlm0-heimdal:i386
       1 libhfsp0
+      1 libhiredis0.10:armhf
       1 libhogweed2:amd64
+      1 libhogweed2:armhf
       1 libhogweed4:amd64
       1 libhpmud0
       1 libhpmud0:amd64
+      1 libhsqldb1.8.0-java
       1 libhtml-template-perl
       1 libhttp-server-simple-perl
       1 libhud-client2:amd64
+      1 libhunspell-1.3-0:armhf
+      1 libhx509-5-heimdal:armhf
       1 libhx509-5-heimdal:i386
       1 libhybris
       1 libhybris-common1
-      1 libhyphen0
       1 libhyphen0:amd64
       1 libical1
       1 libical1a:amd64
+      1 libice6:armhf
       1 libice6:i386
       1 libice-dev:amd64
       1 libicu4j-4.4-java
       1 libicu4j-java
       1 libicu52:amd64
+      1 libicu52:armhf
       1 libicu55:amd64
       1 libid3-3.8.3c2a
-      1 libid3tag0
+      1 libident
       1 libidl0:amd64
       1 libidl-common
+      1 libidn11:armhf
       1 libidn11-dev
+      1 libiec61883-0:armhf
       1 libieee1284-3:i386
       1 libijs-0.35
       1 libijs-0.35:amd64
       1 libilmbase11:amd64
       1 libilmbase12:amd64
       1 libilmbase6:amd64
+      1 libilmbase6:armhf
+      1 libimlib2
       1 libimobiledevice4:amd64
+      1 libimobiledevice4:armhf
       1 libimobiledevice6:amd64
       1 libindicate5
       1 libindicate-qt1
@@ -924,52 +1169,68 @@
       1 libinput10:amd64
       1 libio-stringy-perl
       1 libiptcdata0
+      1 libirs-export91
       1 libisc160:amd64
-      1 libisc95
       1 libisccc140:amd64
-      1 libisccc90
       1 libisccfg140:amd64
-      1 libisccfg90
+      1 libisccfg-export90
       1 libisc-export160
+      1 libisc-export95
       1 libisl10:amd64
+      1 libisl10:armhf
       1 libisl15:amd64
       1 libiso9660-8
       1 libisofs6
+      1 libiw30:armhf
+      1 libjack-jackd2-0:armhf
       1 libjack-jackd2-0:i386
+      1 libjasper1:armhf
       1 libjavascriptcoregtk-1.0-0:amd64
       1 libjavascriptcoregtk-3.0-0:amd64
+      1 libjavascriptcoregtk-3.0-0:armhf
       1 libjavascriptcoregtk-4.0-18:amd64
       1 libjaxen-java
+      1 libjbig0:armhf
       1 libjbig0:i386
       1 libjdom1-java
+      1 libjemalloc1
       1 libjetty8-java
       1 libjgoodies-common-java
       1 libjgoodies-forms-java
       1 libjibx1.1-java
       1 libjline-java
       1 libjpeg62:i386
+      1 libjpeg62-turbo:armhf
+      1 libjpeg8:armhf
       1 libjpeg8:i386
       1 libjpeg-turbo8:i386
       1 libjsch-java
-      1 libjs-jquery
+      1 libjs-d3
+      1 libjs-jquery-form
+      1 libjs-jquery-metadata
+      1 libjs-jquery-tablesorter
       1 libjs-mathjax
       1 libjson0:amd64
+      1 libjson-c2:armhf
       1 libjson-c2:i386
       1 libjsoncpp0:amd64
+      1 libjson-glib-1.0-0:armhf
       1 libjson-perl
       1 libjson-xs-perl
+      1 libjs-prettify
+      1 libjs-rickshaw
       1 libjs-sphinxdoc
       1 libjs-underscore
       1 libjte1
       1 libjtidy-java
       1 libjudydebian1
+      1 libk5crypto3:armhf
       1 libk5crypto3:i386
       1 libkactivities6
       1 libkactivities-bin
       1 libkactivities-models1
       1 libkadm5clnt-mit9:amd64
       1 libkadm5srv-mit9:amd64
-      1 libkate1
       1 libkate1:amd64
       1 libkatepartinterfaces4
       1 libkcmutils4
@@ -984,6 +1245,7 @@
       1 libkdnssd4
       1 libkemoticons4
       1 libkeybinder0
+      1 libkeyutils1:armhf
       1 libkeyutils1:i386
       1 libkfile4
       1 libkhtml5
@@ -992,6 +1254,7 @@
       1 libkjsapi4
       1 libkjsembed4
       1 libkmediaplayer4
+      1 libkmod2:armhf
       1 libknewstuff3-4
       1 libknotifyconfig4
       1 libkntlm4
@@ -1000,31 +1263,35 @@
       1 libkpathsea6:amd64
       1 libkpty4
       1 libkqueue0
+      1 libkrb5-26-heimdal:armhf
       1 libkrb5-26-heimdal:i386
+      1 libkrb5-3:armhf
       1 libkrb5-3:i386
       1 libkrb5-dev
+      1 libkrb5support0:armhf
       1 libkrb5support0:i386
       1 libkrosscore4
+      1 libksba8:armhf
       1 libktexteditor4
       1 libkubuntu0
       1 libkxml2-java
       1 libkxmlrpcclient4
       1 libkyotocabinet16v5:amd64
-      1 liblangtag1
       1 liblangtag1:amd64
-      1 liblapack3
       1 liblastfm1:amd64
       1 liblavfile-2.1-0
       1 liblavjpeg-2.1-0
       1 liblavplay-2.1-0
       1 liblcms1:amd64
+      1 liblcms2-2:armhf
       1 liblcms2-2:i386
       1 liblcms2-utils
+      1 libldap-2.4-2:armhf
       1 libldap-2.4-2:i386
       1 libldap2-dev:amd64
+      1 libldb1:armhf
       1 liblensfun0
       1 liblensfun-data
-      1 liblightdm-gobject-1-0
       1 liblightdm-gobject-1-0:amd64
       1 liblilv-0-0
       1 liblinear1
@@ -1034,10 +1301,14 @@
       1 liblivemedia23
       1 libllvm3.4:amd64
       1 libllvm3.5:amd64
+      1 libllvm3.5:armhf
       1 libllvm3.5:i386
       1 libllvm3.8:amd64
       1 liblo7
-      1 liblog-message-simple-perl
+      1 liblockfile1:armhf
+      1 liblogging-stdlog0:armhf
+      1 liblog-message-perl
+      1 liblognorm1:armhf
       1 liblouis2:amd64
       1 liblouis9:amd64
       1 liblouisutdml6:amd64
@@ -1045,15 +1316,23 @@
       1 liblouisutdml-data
       1 liblrdf0
       1 liblsan0:amd64
+      1 libltdl7:armhf
       1 libltdl7:i386
       1 liblttng-ust0:amd64
       1 liblttng-ust-ctl2:amd64
       1 liblua5.1-0:amd64
+      1 liblua5.1-0:armhf
+      1 libluajit-5.1-2:armhf
+      1 libluajit-5.1-common
       1 liblucene2-java
+      1 liblvm2app2.2:armhf
       1 liblwres141:amd64
-      1 liblwres90
       1 liblz4-1:amd64
+      1 liblzma5:armhf
       1 liblzma5:i386
+      1 liblzo2-2:armhf
+      1 libmad0:armhf
+      1 libmagic1:armhf
       1 libmagick++5:amd64
       1 libmagickcore5:amd64
       1 libmagickcore5-extra:amd64
@@ -1071,13 +1350,16 @@
       1 libmediaart-2.0-0:amd64
       1 libmediainfo0:amd64
       1 libmediascanner-2.0-0:amd64
+      1 libmenu-cache3:armhf
+      1 libmenu-cache-bin
       1 libmessaging-menu0
       1 libmessaging-menu0:amd64
       1 libmetacity-private0a
       1 libmetacity-private3a:amd64
+      1 libmhash2:armhf
       1 libmicrohttpd10
       1 libmikmod2:amd64
-      1 libmimic0
+      1 libmikmod3:armhf
       1 libmimic0:amd64
       1 libminiupnpc10:amd64
       1 libminiupnpc8
@@ -1092,10 +1374,13 @@
       1 libmirserver18:amd64
       1 libmission-control-plugins0
       1 libmkv0:amd64
+      1 libmms0:armhf
+      1 libmng1:armhf
+      1 libmnl0:armhf
       1 libmodemmanagerqt1
-      1 libmodplug1
       1 libmodplug1:amd64
-      1 libmodule-pluggable-perl
+      1 libmodule-build-perl
+      1 libmodule-signature-perl
       1 libmono-cairo4.0-cil
       1 libmono-corlib4.0-cil
       1 libmono-corlib4.5-cil
@@ -1107,34 +1392,44 @@
       1 libmono-system-drawing4.0-cil
       1 libmono-system-security4.0-cil
       1 libmono-system-xml4.0-cil
-      1 libmotif-common
+      1 libmount1:armhf
       1 libmouse-perl
       1 libmovit2
-      1 libmozjs185-1.0
       1 libmozjs-24-0
+      1 libmp3lame0:armhf
+      1 libmpc3:armhf
       1 libmpcdec6
+      1 libmpdec2:armhf
+      1 libmpfr4:armhf
+      1 libmpg123-0:armhf
       1 libmpg123-0:i386
       1 libmpx0:amd64
       1 libmrm4:amd64
+      1 libmro-compat-perl
       1 libmspack0:amd64
       1 libmspub-0.0-0
+      1 libmspub-0.1-1
       1 libmspub-0.1-1:amd64
+      1 libmtdev1:armhf
+      1 libmtp9:armhf
       1 libmusicbrainz5-0:amd64
       1 libmusicbrainz-discid-perl
+      1 libmwaw-0.3-3
       1 libmwaw-0.3-3:amd64
       1 libmysqlclient18:amd64
       1 libmysqlclient18:i386
       1 libmysqlclient20:amd64
-      1 libmythes-1.2-0
       1 libmythes-1.2-0:amd64
       1 libnatpmp1
       1 libnatpmp1:amd64
       1 libnautilus-extension1a
       1 libnautilus-extension1a:amd64
+      1 libncurses5:armhf
       1 libncurses5-dev:amd64
       1 libncurses5:i386
+      1 libncursesw5:armhf
       1 libndp0:amd64
-      1 libneon27-gnutls
+      1 libndpi1a
       1 libneon27-gnutls:amd64
       1 libnepomuk4
       1 libnepomukcleaner4
@@ -1143,15 +1438,24 @@
       1 libnepomukutils4
       1 libnetcf1
       1 libnet-dropbox-api-perl
+      1 libnetfilter-conntrack3:armhf
       1 libnet-oauth-perl
       1 libnettle4:amd64
+      1 libnettle4:armhf
       1 libnettle6:amd64
       1 libnetworkmanagerqt1
+      1 libnewt0.52:armhf
+      1 libnfnetlink0:armhf
       1 libnfs1:amd64
       1 libnfsidmap2:amd64
+      1 libnfsidmap2:armhf
       1 libnice10:amd64
+      1 libnih1
       1 libnih1:i386
+      1 libnih-dbus1
       1 libnih-dbus1:i386
+      1 libnl-3-200:armhf
+      1 libnl-genl-3-200:armhf
       1 libnl-route-3-200:amd64
       1 libnm0:amd64
       1 libnma0:amd64
@@ -1164,122 +1468,181 @@
       1 libnm-gtk0:amd64
       1 libnm-util2
       1 libnm-util2:amd64
+      1 libnotify4:armhf
       1 libnpth0:amd64
       1 libnspr4-0d:amd64
+      1 libnspr4:armhf
       1 libnss3-1d:amd64
+      1 libnss3:armhf
+      1 libnss-mdns:armhf
       1 libnss-winbind:amd64
       1 libntdb1:amd64
+      1 libntdb1:armhf
       1 libntlm0:amd64
       1 libntrack0
       1 libntrack-qt4-1
       1 liboath0
       1 libobjc-4.8-dev:amd64
       1 libobjc4:amd64
+      1 libobrender29
+      1 libobt2
       1 libodbc1:amd64
-      1 libodfgen-0.1-1
-      1 libofa0
       1 libofa0:amd64
       1 libofono-qt1
+      1 libogg0:armhf
       1 libogg0:i386
       1 liboil0.3:amd64
+      1 libonig2:armhf
       1 libonline-accounts-client1:amd64
+      1 libopenal1:armhf
       1 libopenal1:i386
       1 libopencc1:amd64
       1 libopencolorio1
       1 libopenconnect2:amd64
       1 libopencv-calib3d2.4:amd64
+      1 libopencv-calib3d2.4:armhf
       1 libopencv-calib3d2.4v5:amd64
       1 libopencv-contrib2.4:amd64
+      1 libopencv-contrib2.4:armhf
       1 libopencv-contrib2.4v5:amd64
       1 libopencv-core2.4:amd64
+      1 libopencv-core2.4:armhf
       1 libopencv-core2.4v5:amd64
       1 libopencv-features2d2.4:amd64
+      1 libopencv-features2d2.4:armhf
       1 libopencv-features2d2.4v5:amd64
       1 libopencv-flann2.4:amd64
+      1 libopencv-flann2.4:armhf
       1 libopencv-flann2.4v5:amd64
       1 libopencv-highgui2.4:amd64
+      1 libopencv-highgui2.4:armhf
       1 libopencv-highgui2.4v5:amd64
       1 libopencv-imgproc2.4:amd64
+      1 libopencv-imgproc2.4:armhf
       1 libopencv-imgproc2.4v5:amd64
       1 libopencv-legacy2.4:amd64
+      1 libopencv-legacy2.4:armhf
       1 libopencv-legacy2.4v5:amd64
       1 libopencv-ml2.4:amd64
+      1 libopencv-ml2.4:armhf
       1 libopencv-ml2.4v5:amd64
       1 libopencv-objdetect2.4:amd64
+      1 libopencv-objdetect2.4:armhf
       1 libopencv-objdetect2.4v5:amd64
       1 libopencv-video2.4:amd64
+      1 libopencv-video2.4:armhf
       1 libopencv-video2.4v5:amd64
       1 libopenexr21:amd64
       1 libopenexr22:amd64
       1 libopenexr6:amd64
+      1 libopenexr6:armhf
       1 libopenimageio1.3
       1 libopenjpeg2:amd64
       1 libopenjpeg5:amd64
+      1 libopenjpeg5:armhf
       1 libopenobex1
       1 libopenshadinglanguage1.4
       1 libopenvg1-mesa:amd64
       1 libopts25:amd64
+      1 libopts25:armhf
       1 libopus0
       1 libopus0:amd64
+      1 libopus0:armhf
       1 liborbit-2-0:amd64
       1 liborbit2:amd64
+      1 liborc-0.4-0:armhf
       1 liborc-0.4-0:i386
       1 liborcus-0.10-0v5:amd64
       1 liborcus-0.6-0
+      1 liborcus-0.8-0
       1 libosgi-compendium-java
       1 libosgi-core-java
       1 libosgi-foundation-ee-java
       1 libosmesa6:amd64
       1 libosmesa6:i386
+      1 libp11-kit0:armhf
       1 libp11-kit0:i386
       1 libp11-kit-dev
       1 libp11-kit-gnome-keyring:i386
+      1 libpackage-constants-perl
+      1 libpackagekit-glib2-18:armhf
       1 libpagemaker-0.0-0:amd64
+      1 libpam0g:armhf
       1 libpam-cap:amd64
       1 libpam-ck-connector:amd64
+      1 libpam-modules:armhf
+      1 libpam-systemd:armhf
       1 libpam-winbind:amd64
+      1 libpango-1.0-0:armhf
+      1 libpango1.0-0:armhf
+      1 libpangocairo-1.0-0:armhf
+      1 libpangoft2-1.0-0:armhf
       1 libpangomm-1.4-1:amd64
       1 libpangomm-1.4-1v5:amd64
       1 libpango-perl
+      1 libpangox-1.0-0:armhf
+      1 libpangoxft-1.0-0:armhf
       1 libpano13-2:amd64
       1 libpano13-bin
+      1 libparams-util-perl
       1 libparse-debcontrol-perl
       1 libparted0debian1:amd64
       1 libparted2:amd64
+      1 libparted2:armhf
       1 libpath-class-perl
       1 libpathplan4
+      1 libpcap0.8:armhf
       1 libpcap0.8-dev
       1 libpcap-dev
+      1 libpciaccess0:armhf
       1 libpciaccess0:i386
       1 libpcre16-3:amd64
+      1 libpcre3:armhf
       1 libpcre3:i386
       1 libpcrecpp0:amd64
+      1 libpcsclite1:armhf
       1 libpeas-1.0-0
       1 libpeas-1.0-0:amd64
       1 libpeas-1.0-0-python3loader
+      1 libperl4-corelibs-perl
       1 libperl5.18
       1 libperl5.22:amd64
+      1 libpgm-5.1-0
       1 libpgm-5.1-0:amd64
       1 libphonon4:amd64
+      1 libpipeline1:armhf
+      1 libpisock9
+      1 libpixman-1-0:armhf
       1 libplasma3
       1 libplist1:amd64
+      1 libplist2:armhf
       1 libplist3:amd64
       1 libplymouth2:amd64
       1 libplymouth4:amd64
+      1 libpng12-0:armhf
       1 libpng12-0:i386
+      1 libpng12-dev:armhf
       1 libpocketsphinx1
-      1 libpod-latex-perl
       1 libpodofo0.9.0
+      1 libpod-readme-perl
+      1 libpolkit-agent-1-0:armhf
+      1 libpolkit-backend-1-0:armhf
+      1 libpolkit-gobject-1-0:armhf
       1 libpolkit-qt-1-1
       1 libpoppler44:amd64
+      1 libpoppler46:armhf
       1 libpoppler58:amd64
       1 libpoppler-qt4-4:amd64
+      1 libpopt0:armhf
+      1 libportaudio2:armhf
+      1 libportmidi0
       1 libportsmf0:amd64
       1 libpostproc52
       1 libpq5
       1 libprocess-cpp1:amd64
       1 libproc-processtable-perl
       1 libprocps3:amd64
+      1 libprocps3:armhf
       1 libprocps4:amd64
       1 libproc-simple-perl
       1 libprojectm2
@@ -1288,26 +1651,41 @@
       1 libprotobuf9v5:amd64
       1 libprotobuf-lite9v5:amd64
       1 libproxy1:amd64
+      1 libproxy1:armhf
       1 libproxy1v5:amd64
       1 libproxy-tools
+      1 libpsl0:armhf
       1 libpth20:amd64
+      1 libpth20:armhf
       1 libpthread-stubs0-dev:amd64
       1 libpthread-workqueue0
+      1 libpulse0:armhf
       1 libpulse0:i386
       1 libpurple0
       1 libpurple-bin
+      1 libpython2.7:armhf
       1 libpython2.7-dev:amd64
+      1 libpython2.7-minimal:armhf
+      1 libpython2.7-stdlib:armhf
       1 libpython3.4:amd64
+      1 libpython3.4:armhf
+      1 libpython3.4-dev:armhf
       1 libpython3.4-minimal:amd64
+      1 libpython3.4-minimal:armhf
       1 libpython3.4-stdlib:amd64
+      1 libpython3.4-stdlib:armhf
       1 libpython3.5:amd64
       1 libpython3.5-minimal:amd64
       1 libpython3.5-stdlib:amd64
+      1 libpython3-dev:armhf
+      1 libpython3-stdlib:armhf
       1 libpython-dev:amd64
+      1 libpython-stdlib:armhf
       1 libpyzy-1.0-0
       1 libqapt2
       1 libqapt2-runtime
       1 libqca2:amd64
+      1 libqdbm14
       1 libqdjango-db0:amd64
       1 libqdox-java
       1 libqgsttools-p1:amd64
@@ -1320,12 +1698,12 @@
       1 libqpdf13:amd64
       1 libqpdf17:amd64
       1 libqqwing2v5:amd64
-      1 libqscintilla2-11
-      1 libqscintilla2-l10n
+      1 libqt4-dbus:armhf
       1 libqt4-dbus:i386
       1 libqt4-declarative:i386
       1 libqt4-designer:amd64
       1 libqt4-help:amd64
+      1 libqt4-network:armhf
       1 libqt4-network:i386
       1 libqt4-opengl:amd64
       1 libqt4-opengl:i386
@@ -1337,7 +1715,9 @@
       1 libqt4-sql-mysql:i386
       1 libqt4-svg:amd64
       1 libqt4-test:amd64
+      1 libqt4-xml:armhf
       1 libqt4-xml:i386
+      1 libqt4-xmlpatterns:armhf
       1 libqt4-xmlpatterns:i386
       1 libqt5concurrent5:amd64
       1 libqt5multimedia5-plugins:amd64
@@ -1351,10 +1731,14 @@
       1 libqt5x11extras5:amd64
       1 libqt5xmlpatterns5:amd64
       1 libqtassistantclient4:amd64
+      1 libqtcore4:armhf
       1 libqtcore4:i386
+      1 libqtdbus4:armhf
       1 libqtdbus4:i386
+      1 libqtgui4:armhf
       1 libqtgui4:i386
       1 libqtwebkit4:amd64
+      1 libqtwebkit4:armhf
       1 libqtwebkit4:i386
       1 libquicktime2:amd64
       1 libquvi7:amd64
@@ -1363,56 +1747,96 @@
       1 libqxt-gui0:amd64
       1 librados2
       1 libraptor1:amd64
+      1 libraptor2-0:armhf
       1 librarian0
+      1 libraspberrypi0
+      1 libraspberrypi-bin
+      1 libraspberrypi-dev
+      1 libraspberrypi-doc
+      1 librasqal3:armhf
+      1 libraw1394-11:armhf
       1 libraw15:amd64
       1 libraw9:amd64
       1 librbd1
+      1 librdf0:armhf
       1 libreadline5:amd64
+      1 libreadline6:armhf
       1 libreadline6-dev:amd64
       1 librecode0:amd64
+      1 libregexp-common-perl
       1 libregexp-java
+      1 libreoffice-base
       1 libreoffice-help-en-gb
       1 libreoffice-help-ja
+      1 libreoffice-java-common
       1 libreoffice-l10n-en-gb
       1 libreoffice-l10n-en-za
       1 libreoffice-l10n-ja
       1 libreoffice-presentation-minimizer
+      1 libreoffice-sdbc-hsqldb
       1 libreoffice-style-breeze
-      1 libreoffice-style-galaxy
       1 libreoffice-style-human
       1 libresid-builder0c2a
+      1 librest-0.7-0:armhf
+      1 librevenge-0.0-0
       1 librevenge-0.0-0:amd64
       1 librhythmbox-core8
       1 librhythmbox-core9:amd64
+      1 libroken18-heimdal:armhf
       1 libroken18-heimdal:i386
+      1 librrd4
+      1 librsvg2-2:armhf
+      1 librsvg2-common:armhf
       1 librsync1:amd64
       1 librtaudio4:amd64
+      1 librtimulib7
+      1 librtimulib-dev
+      1 librtimulib-utils
       1 librtmidi1:amd64
       1 librtmp0:amd64
       1 librtmp1:amd64
+      1 librtmp1:armhf
       1 librtmp-dev
-      1 libruby1.9.1
+      1 libruby1.9.1-dbg
+      1 libruby2.1:armhf
+      1 libsamplerate0:armhf
       1 libsamplerate0:i386
       1 libsane-hpaio
       1 libsane-hpaio:amd64
       1 libsane:i386
+      1 libsasl2-2:armhf
       1 libsasl2-2:i386
+      1 libsasl2-modules:armhf
+      1 libsasl2-modules-db:armhf
       1 libsasl2-modules-db:i386
       1 libsasl2-modules:i386
+      1 libsbc1:armhf
       1 libsbsms10:amd64
+      1 libschroedinger-1.0-0:armhf
+      1 libscsynth1
       1 libsctp1:amd64
+      1 libsdl1.2debian:armhf
       1 libsdl-image1.2:amd64
+      1 libsdl-image1.2:armhf
+      1 libsdl-mixer1.2:armhf
       1 libsdl-net1.2:amd64
       1 libsdl-sound1.2:amd64
+      1 libsdl-ttf2.0-0:armhf
+      1 libsecret-1-0:armhf
+      1 libselinux1:armhf
       1 libselinux1:i386
+      1 libsemanage1:armhf
+      1 libsepol1:armhf
       1 libserd-0-0:amd64
-      1 libservlet2.5-java
       1 libservlet3.0-java
       1 libshairport1:amd64
+      1 libshout3:armhf
       1 libsidplay1
       1 libsidplay1v5
       1 libsidplay2
+      1 libsigc++-1.2-5c2
       1 libsigc++-2.0-0c2a:amd64
+      1 libsigc++-2.0-0c2a:armhf
       1 libsigc++-2.0-0v5:amd64
       1 libsignon-extension1
       1 libsignon-extension1:amd64
@@ -1422,85 +1846,125 @@
       1 libsignon-plugins-common1:amd64
       1 libsignon-qt5-1
       1 libsignon-qt5-1:amd64
+      1 libslang2:armhf
       1 libslv2-9
+      1 libsm6:armhf
       1 libsm6:i386
       1 libsmartcols1:amd64
+      1 libsmartcols1:armhf
+      1 libsmbclient:armhf
       1 libsm-dev:amd64
       1 libsmi2ldbl:amd64
       1 libsnappy1v5:amd64
+      1 libsndfile1:armhf
       1 libsndfile1:i386
+      1 libsodium13:armhf
       1 libsodium18:amd64
+      1 libsoftware-license-perl
       1 libsolid4
       1 libsoprano4
       1 libsord-0-0:amd64
       1 libsort-naturally-perl
       1 libsoundtouch0:amd64
+      1 libsoundtouch0:armhf
       1 libsoundtouch1:amd64
+      1 libsoup2.4-1:armhf
+      1 libsoup-gnome2.4-1:armhf
       1 libspandsp2
       1 libspandsp2:amd64
+      1 libspandsp2:armhf
+      1 libspeex1:armhf
       1 libspeexdsp1:i386
       1 libsphinxbase1
       1 libspice-server1:amd64
       1 libspnav0
+      1 libsqlite3-0:armhf
       1 libsqlite3-0:i386
       1 libsqlite3-dev:amd64
       1 libsratom-0-0:amd64
+      1 libss2:armhf
       1 libssh2-1:amd64
+      1 libssh2-1:armhf
+      1 libssh-4:armhf
       1 libssh-gcrypt-4:amd64
+      1 libssl1.0.0:armhf
       1 libssl1.0.0:i386
       1 libssl-dev:amd64
       1 libssl-doc
+      1 libstartup-notification0:armhf
       1 libstdc++-4.8-dev:amd64
+      1 libstdc++-4.9-dev:armhf
       1 libstdc++-5-dev:amd64
+      1 libstdc++6:armhf
       1 libstdc++6:i386
       1 libstk0c2a:amd64
       1 libstreamanalyzer0
       1 libstreams0
+      1 libsub-exporter-perl
       1 libsub-identify-perl
+      1 libsub-install-perl
       1 libsuil-0-0:amd64
       1 libsuitesparseconfig4.4.6:amd64
       1 libsvga1:amd64
       1 libswscale2:amd64
+      1 libswscale3:armhf
       1 libswt-cairo-gtk-3-jni
       1 libswt-glx-gtk-3-jni
       1 libswt-gnome-gtk-3-jni
       1 libswt-gtk-3-java
       1 libswt-gtk-3-jni
       1 libswt-webkit-gtk-3-jni
+      1 libsysfs2:armhf
       1 libsystemd0:amd64
+      1 libsystemd0:armhf
       1 libsystemd-daemon0:amd64
       1 libsystemd-journal0:amd64
       1 libsystemd-login0:amd64
       1 libsystemsettings1:amd64
       1 libt1-5
       1 libtag1c2a:amd64
+      1 libtag1c2a:armhf
       1 libtag1v5:amd64
       1 libtag1v5-vanilla:amd64
       1 libtag1-vanilla:amd64
+      1 libtag1-vanilla:armhf
       1 libtagc0:amd64
+      1 libtalloc2:armhf
       1 libtar0
+      1 libtasn1-6:armhf
       1 libtasn1-6-dev
       1 libtasn1-6:i386
       1 libtbb2
       1 libtbb2:amd64
+      1 libtcl8.5:armhf
+      1 libtcl8.6:armhf
+      1 libtcltk-ruby1.9.1
+      1 libtdb1:armhf
       1 libtelepathy-farstream3:amd64
       1 libtelepathy-logger3:amd64
       1 libterm-readkey-perl
-      1 libterm-ui-perl
-      1 libtext-soundex-perl
+      1 libtevent0:armhf
+      1 libtext-template-perl
+      1 libthai0:armhf
+      1 libtheora0:armhf
       1 libthreadweaver4
       1 libthumbnailer0:amd64
       1 libthunarx-2-0
       1 libtidy-0.99-0
+      1 libtiff5:armhf
       1 libtiff5:i386
       1 libtimezonemap1
       1 libtimezonemap1:amd64
       1 libtimezonemap-data
+      1 libtinfo5:armhf
       1 libtinfo5:i386
       1 libtinfo-dev:amd64
       1 libtinyxml2-0.0.0:amd64
       1 libtinyxml2.6.2:amd64
       1 libtirpc1:amd64
+      1 libtirpc1:armhf
+      1 libtk8.5:armhf
+      1 libtk8.6:armhf
       1 libtokyocabinet9:amd64
       1 libtomcat7-java
       1 libtool
@@ -1516,6 +1980,7 @@
       1 libtwolame0:amd64
       1 libtxc-dxtn-s2tc0:i386
       1 libubsan0:amd64
+      1 libubsan0:armhf
       1 libubuntu-application-api1:amd64
       1 libubuntu-application-api-mirclient1:amd64
       1 libubuntu-application-api-mirserver1:amd64
@@ -1528,7 +1993,10 @@
       1 libubuntuoneauth-2.0-0:amd64
       1 libubuntu-platform-hardware-api1:amd64
       1 libubuntutoolkit5:amd64
+      1 libudev0:armhf
+      1 libudev1:armhf
       1 libudev1:i386
+      1 libudisks2-0:armhf
       1 libufe-xidgetter0
       1 libuil4:amd64
       1 libumfpack5.6.2:amd64
@@ -1549,17 +2017,27 @@
       1 libupstart-app-launch2:amd64
       1 liburcu1
       1 libusageenvironment1
+      1 libusb-0.1-4:armhf
+      1 libusb-1.0-0:armhf
       1 libusb-1.0-0:i386
       1 libusbmuxd2
+      1 libusbmuxd2:armhf
       1 libusbmuxd4:amd64
       1 libusbredirparser1:amd64
       1 libusermetricsoutput1:amd64
+      1 libustr-1.0-1:armhf
       1 libutempter0
       1 libutempter0:amd64
+      1 libuuid1:armhf
       1 libuuid1:i386
+      1 libv4l-0:armhf
       1 libv4l-0:i386
       1 libv4l2rds0:amd64
+      1 libv4l2rds0:armhf
+      1 libv4lconvert0:armhf
       1 libv4lconvert0:i386
+      1 libv8-3.14.5
+      1 libva1:armhf
       1 libva-drm1:amd64
       1 libva-egl1:amd64
       1 libva-glx1:amd64
@@ -1570,39 +2048,57 @@
       1 libva-wayland1:amd64
       1 libva-x11-1:amd64
       1 libvcdinfo0
+      1 libvdpau1:armhf
       1 libvidstab1.0
       1 libvirt0
       1 libvirt-bin
       1 libvirtodbc0
       1 libvisio-0.0-0
+      1 libvisio-0.1-1
       1 libvisio-0.1-1:amd64
+      1 libvisual-0.4-0:armhf
       1 libvisual-0.4-plugins:amd64
+      1 libvisual-0.4-plugins:armhf
       1 libvlc5
       1 libvlccore7
       1 libvncclient1:amd64
       1 libvncserver0:amd64
+      1 libvo-aacenc0:armhf
+      1 libvo-amrwbenc0:armhf
+      1 libvorbis0a:armhf
       1 libvorbis0a:i386
+      1 libvorbisenc2:armhf
       1 libvorbisenc2:i386
+      1 libvorbisfile3:armhf
       1 libvpx1:amd64
+      1 libvpx1:armhf
       1 libvpx1:i386
       1 libvpx3:amd64
       1 libvte-2.90-9
       1 libvte-2.90-common
       1 libvte-2.91-0:amd64
       1 libvte-2.91-common
-      1 libvte9
-      1 libvte-common
       1 libwacom-bin
+      1 libwavpack1:armhf
+      1 libwayland-client0:armhf
+      1 libwayland-cursor0:armhf
+      1 libwayland-server0:armhf
+      1 libwbclient0:armhf
       1 libwebkit2gtk-4.0-37:amd64
       1 libwebkit2gtk-4.0-37-gtk2:amd64
       1 libwebkitgtk-1.0-0:amd64
       1 libwebkitgtk-1.0-common
       1 libwebkitgtk-3.0-0:amd64
-      1 libwebkitgtk-3.0-common
+      1 libwebkitgtk-3.0-0:armhf
+      1 libwebp5:armhf
+      1 libwebpdemux1:armhf
+      1 libwebpmux1:armhf
       1 libwebrtc-audio-processing-0:amd64
       1 libwebservice-musicbrainz-perl
       1 libwhoopsie0
       1 libwhoopsie0:amd64
+      1 libwildmidi1:armhf
+      1 libwind0-heimdal:armhf
       1 libwind0-heimdal:i386
       1 libwinpr-crt0.1:amd64
       1 libwinpr-dsparse0.1:amd64
@@ -1626,14 +2122,18 @@
       1 libwireshark-data
       1 libwiretap3:amd64
       1 libwmf-bin
-      1 libwnck22
       1 libwnck22:amd64
+      1 libwnck-3-0:armhf
+      1 libwpd-0.10-10
       1 libwpd-0.10-10:amd64
       1 libwpd-0.9-9
       1 libwpg-0.2-2
+      1 libwpg-0.3-3
       1 libwpg-0.3-3:amd64
       1 libwps-0.2-2
+      1 libwps-0.3-3
       1 libwps-0.4-4:amd64
+      1 libwrap0:armhf
       1 libwrap0:i386
       1 libwsutil3:amd64
       1 libwww-mechanize-perl
@@ -1642,48 +2142,69 @@
       1 libwxgtk2.8-0:amd64
       1 libwxgtk3.0-0:amd64
       1 libwxgtk-media2.8-0:amd64
+      1 libx11-6:armhf
       1 libx11-6:i386
       1 libx11-dev:amd64
       1 libx11-doc
+      1 libx11-xcb1:armhf
       1 libx11-xcb1:i386
       1 libx264-142:amd64
+      1 libx264-142:armhf
       1 libx264-148:amd64
       1 libx265-79:amd64
       1 libx265:amd64
-      1 libxapian22
       1 libxapian22v5:amd64
+      1 libxau6:armhf
       1 libxau6:i386
       1 libxau-dev:amd64
+      1 libxaw7:armhf
+      1 libxcb1:armhf
       1 libxcb1-dev:amd64
       1 libxcb1:i386
       1 libxcb-composite0:amd64
+      1 libxcb-dri2-0:armhf
       1 libxcb-dri2-0:i386
+      1 libxcb-dri3-0:armhf
       1 libxcb-dri3-0:i386
+      1 libxcb-glx0:armhf
       1 libxcb-glx0:i386
+      1 libxcb-present0:armhf
       1 libxcb-present0:i386
+      1 libxcb-render0:armhf
+      1 libxcb-shape0:armhf
+      1 libxcb-shm0:armhf
+      1 libxcb-sync1:armhf
       1 libxcb-sync1:i386
       1 libxcb-util0:amd64
+      1 libxcb-util0:armhf
       1 libxcb-util1:amd64
+      1 libxcb-xfixes0:armhf
       1 libxcb-xinerama0:amd64
       1 libxcb-xv0:amd64
+      1 libxcomposite1:armhf
       1 libxcomposite1:i386
+      1 libxcursor1:armhf
       1 libxcursor1:i386
+      1 libxdamage1:armhf
       1 libxdamage1:i386
       1 libxdelta2
+      1 libxdmcp6:armhf
       1 libxdmcp6:i386
       1 libxdmcp-dev:amd64
       1 libxen-4.4
       1 libxenstore3.0
       1 libxerces2-java
       1 libxerces-c3.1:amd64
+      1 libxext6:armhf
       1 libxext6:i386
-      1 libxfce4ui-1-0
       1 libxfce4ui-common
+      1 libxfce4util6
       1 libxfce4util7
-      1 libxfce4util-bin
-      1 libxfce4util-common
-      1 libxfconf-0-2
+      1 libxfixes3:armhf
       1 libxfixes3:i386
+      1 libxfont1:armhf
+      1 libxft2:armhf
+      1 libxi6:armhf
       1 libxi6:i386
       1 libxine1
       1 libxine1-bin
@@ -1698,11 +2219,15 @@
       1 libxine2-misc-plugins
       1 libxine2-plugins
       1 libxine2-x
+      1 libxinerama1:armhf
       1 libxinerama1:i386
-      1 libxklavier16
+      1 libxkbcommon0:armhf
+      1 libxkbfile1:armhf
       1 libxklavier16:amd64
       1 libxm4:amd64
+      1 libxm4:armhf
       1 libxml++2.6-2
+      1 libxml2:armhf
       1 libxml2-dev:amd64
       1 libxml2:i386
       1 libxml2-utils
@@ -1714,31 +2239,46 @@
       1 libxml-sax-expat-perl
       1 libxml-sax-perl
       1 libxml-simple-perl
+      1 libxmu6:armhf
+      1 libxmuu1:armhf
       1 libxom-java
       1 libxp6:amd64
+      1 libxpm4:armhf
       1 libxpm4:i386
       1 libxpp2-java
       1 libxpp3-java
+      1 libxrandr2:armhf
       1 libxrandr2:i386
+      1 libxrender1:armhf
       1 libxrender1:i386
+      1 libxres1:armhf
+      1 libxshmfence1:armhf
       1 libxshmfence1:i386
+      1 libxslt1.1:armhf
       1 libxslt1.1:i386
       1 libxslt1-dev:amd64
+      1 libxss1:armhf
       1 libxss1:i386
+      1 libxt6:armhf
       1 libxt6:i386
-      1 libxtables10
       1 libxtables11:amd64
       1 libxt-dev:amd64
+      1 libxtst6:armhf
       1 libxtst6:i386
+      1 libxv1:armhf
       1 libxv1:i386
+      1 libxvidcore4:armhf
+      1 libxxf86dga1:armhf
+      1 libxxf86vm1:armhf
       1 libxxf86vm1:i386
       1 libxz-java
+      1 libyajl2:armhf
+      1 libyaml-0-2:armhf
       1 libyaml-cpp0.3:amd64
       1 libyaml-dev:amd64
       1 libyaml-libyaml-perl
       1 libyelp0
       1 libyelp0:amd64
-      1 libzbar0
       1 libzbar0:amd64
       1 libzeitgeist-1.0-1
       1 libzeitgeist-1.0-1:amd64
@@ -1746,9 +2286,11 @@
       1 libzephyr4:amd64
       1 libzip2
       1 libzmq3:amd64
+      1 libzmq3:armhf
       1 libzmq5:amd64
       1 libzmqpp3:amd64
       1 libzthread-2.3-2:amd64
+      1 lightdm-gtk-greeter
       1 links2
       1 linux-base
       1 linux-generic
@@ -1839,6 +2381,7 @@
       1 linux-image-extra-4.4.0-28-generic
       1 linux-image-extra-4.4.0-31-generic
       1 linux-image-generic
+      1 linux-libc-dev:armhf
       1 linux-signed-generic
       1 linux-signed-image-4.4.0-28-generic
       1 linux-signed-image-4.4.0-31-generic
@@ -1851,7 +2394,24 @@
       1 lmms-common
       1 lm-sensors
       1 lockfile-progs
+      1 lua5.1
+      1 luajit
       1 luminance-hdr
+      1 lxappearance
+      1 lxappearance-obconf
+      1 lxde
+      1 lxde-common
+      1 lxde-core
+      1 lxde-icon-theme
+      1 lxinput
+      1 lxkeymap
+      1 lxmenu-data
+      1 lxpanel
+      1 lxpanel-data
+      1 lxrandr
+      1 lxsession
+      1 lxtask
+      1 lxterminal
       1 mailutils
       1 mailutils-common
       1 mcp-account-manager-uoa
@@ -1860,16 +2420,17 @@
       1 mediaplayer-app
       1 mediascanner2.0
       1 mencoder
+      1 menu-xdg
       1 mesa-utils
       1 mesa-utils-extra
       1 mesa-vdpau-drivers:amd64
       1 midori
+      1 minecraft-pi
       1 mjpegtools
       1 mjpegtools-gtk
       1 mkvtoolnix
       1 mkvtoolnix-gui
       1 modemmanager
-      1 module-init-tools
       1 mokutil
       1 mono-4.0-gac
       1 mono-gac
@@ -1891,21 +2452,28 @@
       1 nautilus-script-audio-convert
       1 nautilus-scripts-manager
       1 nautilus-sendto-empathy
-      1 ncurses-term
+      1 ncdu
       1 nedit
       1 nepomuk-core-data
       1 nepomuk-core-runtime
+      1 netcat-traditional
+      1 netsurf-common
+      1 netsurf-gtk
       1 network-manager-openconnect
       1 network-manager-openconnect-gnome
       1 network-manager-vpnc
       1 network-manager-vpnc-gnome
-      1 nfs-common
       1 nfs-kernel-server
       1 nmap
+      1 nodejs
+      1 nodejs-legacy
+      1 nodered
       1 normalize-audio
-      1 ntp
+      1 ntopng
+      1 ntopng-data
       1 ntpdate
       1 ntrack-module-libnl-0
+      1 nuscratch
       1 nvidia-352-updates
       1 nvidia-opencl-icd-352-updates
       1 nvidia-prime
@@ -1918,28 +2486,32 @@
       1 odbcinst
       1 odbcinst1debian2:amd64
       1 ofono
+      1 omxplayer
       1 oneconf
       1 oneconf-common
+      1 openbox
       1 openconnect
       1 openjdk-7-jdk:amd64
       1 openjdk-7-jre:amd64
       1 openjdk-7-jre-headless:amd64
-      1 openssh-server
-      1 openssh-sftp-server
+      1 openresolv
       1 oracle-java8-installer
+      1 oracle-java8-jdk
       1 oracle-java8-set-default
       1 overlay-scrollbar-gtk3:amd64
       1 oxygen-icon-theme
       1 p11-kit-modules:i386
       1 p7zip
       1 p7zip-full
+      1 packagekit
       1 packagekit-tools
       1 partimage
       1 pbuilder
       1 pbzip2
+      1 pcmanfm
+      1 penguinspuzzle
       1 pepperflashplugin-nonfree
       1 perlmagick
-      1 perl-modules
       1 perl-modules-5.22
       1 pgadmin3
       1 pgadmin3-data
@@ -1950,14 +2522,9 @@
       1 phonon-backend-gstreamer:amd64
       1 phonon-backend-gstreamer-common:amd64
       1 phoronix-test-suite
-      1 php5
-      1 php5-cli
-      1 php5-common
       1 php5-curl
       1 php5-gd
-      1 php5-json
       1 php5-pgsql
-      1 php5-readline
       1 php-mdb2
       1 php-mdb2-driver-pgsql
       1 php-pear
@@ -1965,8 +2532,12 @@
       1 pidgin
       1 pidgin-data
       1 pidgin-libnotify
+      1 pimixer
       1 pinentry-gnome3
-      1 pinentry-gtk2
+      1 pi-package
+      1 pi-package-data
+      1 pi-package-session
+      1 pipanel
       1 pitivi
       1 plasma-nm
       1 plasma-scriptengine-javascript
@@ -1987,9 +2558,12 @@
       1 pv
       1 pybootchartgui
       1 pyotherside
+      1 pypy-setuptools
+      1 pypy-upstream
+      1 pypy-upstream-dev
+      1 pypy-upstream-doc
       1 python2.7-dev
-      1 python3.4
-      1 python3.4-minimal
+      1 python3.4-dev
       1 python3.5
       1 python3.5-minimal
       1 python3-apparmor
@@ -1999,30 +2573,49 @@
       1 python3-cffi-backend
       1 python3-checkbox-ng
       1 python3-click
+      1 python3-colorama
       1 python3-crypto
       1 python3-cryptography
       1 python3-cups
       1 python3-cupshelpers
+      1 python3-dev
+      1 python3-distlib
       1 python3-gnupg
+      1 python3-gpiozero
       1 python3-guacamole
-      1 python3-html5lib
       1 python3-idna
       1 python3-jinja2
       1 python3-jwt
       1 python3-libapparmor
       1 python3-magic
-      1 python3-numpy
+      1 python3-minecraftpi
       1 python3-oneconf
       1 python3-padme
       1 python3-pexpect
+      1 python3-pgzero
+      1 python3-picamera
+      1 python3-pifacecommon
+      1 python3-pifacedigitalio
+      1 python3-pifacedigital-scratch-handler
       1 python3-pil:amd64
+      1 python3-pil:armhf
+      1 python3-pip
       1 python3-piston-mini-client
       1 python3-ptyprocess
       1 python3-pyasn1
+      1 python3-pygame
       1 python3-renderpm:amd64
       1 python3-reportlab
       1 python3-reportlab-accel:amd64
+      1 python3-rpi.gpio
+      1 python3-rtimulib
+      1 python3-sense-hat
+      1 python3-serial
+      1 python3-setuptools
+      1 python3-spidev
       1 python3-systemd
+      1 python3-tk
+      1 python3-wheel
       1 python3-xlsxwriter
       1 python-appindicator
       1 python-apsw
@@ -2032,11 +2625,8 @@
       1 python-beautifulsoup
       1 python-bs4
       1 python-bzrlib
-      1 python-cairo
-      1 python-chardet
       1 python-chardet-whl
       1 python-cherrypy3
-      1 python-colorama
       1 python-colorama-whl
       1 python-commandnotfound
       1 python-compizconfig
@@ -2047,8 +2637,6 @@
       1 python-cups
       1 python-cupshelpers
       1 python-dateutil
-      1 python-dbus
-      1 python-dbus-dev
       1 python-debian
       1 python-debianbts
       1 python-debtagshw
@@ -2056,7 +2644,6 @@
       1 python-dev
       1 python-dirspec
       1 python-discid
-      1 python-distlib
       1 python-distlib-whl
       1 python-distro-info
       1 python-dns
@@ -2067,19 +2654,15 @@
       1 python-fpconst
       1 python-gconf
       1 python-gdbm
-      1 python-gi
       1 python-gi-cairo
       1 python-glade2
       1 python-gnome2
       1 python-gnomekeyring
-      1 python-gobject
-      1 python-gobject-2
       1 python-gpgme
+      1 python-gpiozero
       1 python-greenlet
       1 python-gst-1.0
-      1 python-gtk2
       1 python-gtk-vnc
-      1 python-html5lib
       1 python-html5lib-whl
       1 python-httplib2
       1 python-ibus
@@ -2099,16 +2682,16 @@
       1 python-matplotlib
       1 python-matplotlib-data
       1 python-mechanize
+      1 python-minecraftpi
       1 python-mutagen
+      1 python-ndg-httpsclient
       1 python-netifaces
       1 python-notify
       1 python-ntdb
-      1 python-numpy
       1 python-oauth
       1 python-oauthlib
       1 python-oneconf
       1 python-openid
-      1 python-openssl
       1 python-pam
       1 python-paramiko
       1 python-paste
@@ -2116,13 +2699,15 @@
       1 python-pastedeploy-tpl
       1 python-pastescript
       1 python-pexpect
+      1 python-picamera
+      1 python-pifacecommon
+      1 python-pifacedigitalio
       1 python-pil
-      1 python-pip
+      1 python-pil:armhf
       1 python-pip-whl
       1 python-piston-mini-client
-      1 python-pkg-resources
-      1 python-pyasn1
       1 python-pycurl
+      1 python-pygame
       1 python-pygments
       1 python-pyorbit
       1 python-pyparsing
@@ -2133,26 +2718,24 @@
       1 python-reportlab
       1 python-reportlab-accel
       1 python-repoze.lru
-      1 python-requests
       1 python-requests-whl
       1 python-routes
+      1 python-rpi.gpio
+      1 python-rtimulib
       1 python-samba
       1 python-scgi
       1 python-secretstorage
-      1 python-serial
-      1 python-setuptools
+      1 python-sense-hat
       1 python-setuptools-whl
       1 python-simplejson
       1 python-sip
-      1 python-six
       1 python-six-whl
       1 python-smbc
       1 python-soappy
-      1 python-support
+      1 python-spidev
       1 python-swift
       1 python-tdb
       1 python-tempita
-      1 python-tk
       1 python-twisted
       1 python-twisted-bin
       1 python-twisted-conch
@@ -2167,19 +2750,18 @@
       1 python-tz
       1 python-ubuntu-sso-client
       1 python-urlgrabber
-      1 python-urllib3
       1 python-urllib3-whl
       1 python-utidylib
       1 python-virtualenv
       1 python-vte
       1 python-wadllib
       1 python-webob
-      1 python-wheel
       1 python-wxgtk2.8
       1 python-wxversion
       1 python-xapian
       1 python-xattr
       1 python-xdg
+      1 python-xklavier
       1 python-zeitgeist
       1 python-zope.interface
       1 qapt-batch
@@ -2195,7 +2777,6 @@
       1 qemu-system-x86
       1 qemu-user-static
       1 qemu-utils
-      1 qjackctl
       1 qmenumodel-qml
       1 qml-module-io-thp-pyotherside:amd64
       1 qml-module-qtfeedback:amd64
@@ -2249,30 +2830,45 @@
       1 quilt
       1 rar
       1 rarian-compat
+      1 raspberrypi-artwork
+      1 raspberrypi-bootloader
+      1 raspberrypi-net-mods
+      1 raspberrypi-sys-mods
+      1 raspberrypi-ui-mods
+      1 raspbian-archive-keyring
+      1 raspi-config
+      1 raspi-copies-and-fills
       1 rawtherapee
       1 rawtherapee-data
-      1 rename
+      1 rc-gui
+      1 redis-server
+      1 redis-tools
       1 reportbug
       1 rhythmbox-mozilla
       1 rhythmbox-plugin-cdrecorder
       1 rhythmbox-plugin-magnatune
+      1 ri1.9.1
       1 ripit
       1 roccat-tools
-      1 rpcbind
-      1 ruby
-      1 ruby1.9.1
-      1 ruby1.9.1-dev
+      1 rpi-update
+      1 ruby1.9.1-examples
+      1 ruby1.9.1-full
+      1 ruby1.9.3
+      1 ruby2.1
       1 ruby-dev
+      1 rubygems-integration
       1 samba
-      1 samba-common
       1 samba-common-bin
       1 samba-dsdb-modules
+      1 samba-libs:armhf
       1 samba-vfs-modules
       1 sat4j
       1 sbsigntool
       1 scons
+      1 scratch
       1 screen-resolution-extra
       1 scribus
+      1 scrot
       1 seabios
       1 seahorse-daemon
       1 seahorse-nautilus
@@ -2281,6 +2877,7 @@
       1 sendmail-base
       1 sendmail-bin
       1 sendmail-cf
+      1 sense-hat
       1 sensible-mda
       1 session-shortcuts
       1 sgml-data
@@ -2297,12 +2894,14 @@
       1 simplyhtml
       1 skype
       1 sl
+      1 smartsim
       1 smbclient
       1 snapd
       1 sni-qt:i386
       1 socat
       1 software-center
       1 software-center-aptdaemon-plugins
+      1 sonic-pi
       1 soprano-daemon
       1 sound-juicer
       1 spell
@@ -2312,25 +2911,34 @@
       1 sqliteman
       1 sqliteman-doc
       1 squashfs-tools
+      1 ssh
       1 ssh-askpass-gnome
       1 sshfs
       1 ssh-import-id
+      1 startpar
       1 steam
       1 stk
       1 suckless-tools
+      1 supercollider
+      1 supercollider-common
+      1 supercollider-ide
+      1 supercollider-language
+      1 supercollider-server
+      1 supercollider-supernova
       1 swh-plugins
       1 swift
       1 synaptic
       1 sysinfo
       1 sysstat
-      1 systemd
       1 systemd-services
       1 systemd-shim
-      1 systemd-sysv
       1 system-image-common
       1 system-image-dbus
       1 tagtool
       1 tap-plugins
+      1 tasksel
+      1 tasksel-data
+      1 tcl8.5
       1 tdb-tools
       1 teamviewer
       1 telepathy-gabble
@@ -2348,11 +2956,13 @@
       1 thunar-volman
       1 thunderbird-locale-en-gb
       1 thunderbird-locale-ja
+      1 timidity
+      1 tk8.5
+      1 tk8.6-blt2.5
       1 tmux
       1 totem-mozilla
-      1 traceroute
       1 transfig
-      1 tree
+      1 triggerhappy
       1 tsconf
       1 tshark
       1 ttf-ancient-fonts
@@ -2383,6 +2993,7 @@
       1 ubuntu-tweak
       1 ubuntu-wallpapers-trusty
       1 ubuntu-wallpapers-xenial
+      1 udisks
       1 unity8
       1 unity8-desktop-session-mir
       1 unity8-private:amd64
@@ -2414,12 +3025,13 @@
       1 url-dispatcher:amd64
       1 usermetricsservice:amd64
       1 uzbl
-      1 v4l-utils
       1 va-driver-all:amd64
+      1 va-driver-all:armhf
       1 vagrant
       1 vainfo
       1 vdpau-driver-all:amd64
       1 vdpau-va-driver:amd64
+      1 vdpau-va-driver:armhf
       1 vinagre
       1 virtinst
       1 virt-manager
@@ -2458,26 +3070,33 @@
       1 winetricks
       1 wireshark
       1 wireshark-common
+      1 wiringpi
       1 wodim
+      1 wolfram-engine
       1 x11proto-core-dev
       1 x11proto-input-dev
       1 x11proto-kb-dev
       1 x11-xfs-utils
+      1 x2x
+      1 xarchiver
       1 xbmc
       1 xbmc-bin
       1 xbrlapi
       1 xclip
       1 xdelta
       1 xfce4-panel
-      1 xfconf
+      1 xfce-keyboard-shortcuts
+      1 xfonts-100dpi
       1 xfonts-mathml
       1 xine-ui
       1 xorg-sgml-doctools
+      1 xpdf
       1 xsane
       1 xsane-common
       1 xserver-xorg-input-mouse
       1 xserver-xorg-video-amdgpu
       1 xserver-xorg-video-cirrus
+      1 xserver-xorg-video-fbturbo
       1 xserver-xorg-video-glamoregl
       1 xserver-xorg-video-mach64
       1 xserver-xorg-video-mga
@@ -2497,7 +3116,9 @@
       1 xul-ext-webaccounts
       1 xul-ext-websites-integration
       1 zeitgeist
+      1 zlib1g:armhf
       1 zlib1g-dev:amd64
+      1 zlib1g-dev:armhf
       1 zlib1g:i386
       1 zsh
       1 zsh-common
@@ -2505,16 +3126,16 @@
       2 account-plugin-flickr
       2 account-plugin-google
       2 accountsservice
-      2 acl
       2 acpid
       2 acpi-support
       2 activity-log-manager
-      2 adduser
       2 adium-theme-ubuntu
+      2 adwaita-icon-theme
       2 aisleriot
-      2 alsa-base
-      2 alsa-utils
       2 anacron
+      2 apache2
+      2 apache2-bin
+      2 apache2-data
       2 apg
       2 apparmor
       2 app-install-data
@@ -2523,40 +3144,26 @@
       2 apport
       2 apport-gtk
       2 apport-symptoms
-      2 apt
       2 aptdaemon
       2 aptdaemon-data
+      2 aptitude
+      2 aptitude-common
       2 apt-transport-https
       2 apturl
       2 apturl-common
-      2 apt-utils
-      2 aspell
-      2 aspell-en
       2 at-spi2-core
       2 avahi-autoipd
-      2 avahi-daemon
       2 avahi-utils
       2 bamfdaemon
       2 baobab
-      2 base-files
-      2 base-passwd
-      2 bash
-      2 bash-completion
       2 bc
-      2 bind9-host
-      2 binutils
       2 bluez
       2 bluez-cups
       2 branding-ubuntu
       2 brltty
-      2 bsdmainutils
-      2 bsdutils
-      2 build-essential
       2 busybox-initramfs
       2 busybox-static
-      2 bzip2
       2 cabextract
-      2 ca-certificates
       2 checkbox-gui
       2 cheese
       2 cheese-common
@@ -2567,18 +3174,10 @@
       2 compiz
       2 compiz-core
       2 compiz-gnome
-      2 console-setup
-      2 coreutils
-      2 cpio
-      2 cpp
+      2 console-setup-linux
       2 cracklib-runtime
-      2 crda
-      2 cron
       2 cups
       2 cups-browsed
-      2 cups-bsd
-      2 cups-client
-      2 cups-common
       2 cups-core-drivers
       2 cups-daemon
       2 cups-filters
@@ -2586,38 +3185,21 @@
       2 cups-pk-helper
       2 cups-ppdc
       2 cups-server-common
-      2 curl
-      2 dash
-      2 dbus
-      2 dbus-x11
-      2 dc
       2 dconf-cli
       2 dconf-gsettings-backend:amd64
-      2 dconf-service
-      2 debconf
-      2 debconf-i18n
-      2 debianutils
       2 deja-dup
-      2 desktop-file-utils
-      2 dh-python
-      2 dictionaries-common
       2 diffstat
-      2 diffutils
       2 distro-info-data
-      2 dmidecode
+      2 dmsetup
       2 dmz-cursor-theme
-      2 dnsmasq-base
+      2 dns-root-data
       2 dnsutils
       2 doc-base
-      2 dosfstools
-      2 dpkg
-      2 dpkg-dev
       2 e2fslibs:amd64
-      2 e2fsprogs
-      2 ed
-      2 eject
+      2 emacsen-common
       2 enchant
       2 eog
+      2 esound-common
       2 espeak-data:amd64
       2 ethtool
       2 evince
@@ -2626,17 +3208,11 @@
       2 evolution-data-server-common
       2 evolution-data-server-online-accounts
       2 example-content
-      2 fakeroot
-      2 file
       2 file-roller
-      2 findutils
       2 firefox
       2 firefox-locale-en
       2 flashplugin-installer
-      2 fontconfig
-      2 fontconfig-config
-      2 fonts-dejavu-core
-      2 fonts-freefont-ttf
+      2 fonts-dejavu-extra
       2 fonts-kacst
       2 fonts-kacst-one
       2 fonts-khmeros-core
@@ -2644,7 +3220,6 @@
       2 fonts-liberation
       2 fonts-lklug-sinhala
       2 fonts-nanum
-      2 fonts-opensymbol
       2 fonts-sil-abyssinica
       2 fonts-sil-padauk
       2 fonts-takao-pgothic
@@ -2663,33 +3238,25 @@
       2 fonts-tlwg-umpush
       2 fonts-tlwg-waree
       2 foomatic-db-compressed-ppds
-      2 freepats
       2 friendly-recovery
       2 ftp
-      2 fuse
-      2 g++
-      2 gcc
-      2 gconf2
-      2 gconf2-common
-      2 gconf-service
       2 gconf-service-backend
       2 gcr
-      2 gdb
+      2 gdbserver
       2 gdisk
       2 gedit
       2 gedit-common
       2 genisoimage
       2 geoclue
       2 geoclue-ubuntu-geoip
-      2 geoip-database
       2 gettext
-      2 gettext-base
       2 ghostscript
       2 ghostscript-x
       2 gir1.2-appindicator3-0.1
-      2 gir1.2-atk-1.0
       2 gir1.2-atspi-2.0
       2 gir1.2-dee-1.0
+      2 gir1.2-gdkpixbuf-2.0
+      2 gir1.2-gmenu-3.0
       2 gir1.2-gnomekeyring-1.0
       2 gir1.2-gst-plugins-base-1.0
       2 gir1.2-gstreamer-1.0
@@ -2698,21 +3265,18 @@
       2 gir1.2-signon-1.0
       2 gir1.2-soup-2.4
       2 gir1.2-unity-5.0:amd64
-      2 git
-      2 git-man
       2 gkbd-capplet
+      2 gksu
       2 glib-networking:amd64
-      2 glib-networking-common
-      2 glib-networking-services
       2 gnome-accessibility-themes
       2 gnome-bluetooth
       2 gnome-calculator
-      2 gnome-desktop3-data
       2 gnome-disk-utility
       2 gnome-font-viewer
+      2 gnome-icon-theme
+      2 gnome-icon-theme-symbolic
       2 gnome-keyring
       2 gnome-mahjongg
-      2 gnome-menus
       2 gnome-mines
       2 gnome-orca
       2 gnome-power-manager
@@ -2730,17 +3294,10 @@
       2 gnome-user-guide
       2 gnome-user-share
       2 gnome-video-effects
-      2 gnupg
-      2 gnupg2
-      2 gnupg-agent
-      2 gpgv
-      2 grep
-      2 groff-base
       2 grub2-common
       2 grub-common
-      2 gsettings-desktop-schemas
       2 gsettings-ubuntu-schemas
-      2 gsfonts
+      2 gsfonts-x11
       2 gstreamer0.10-tools
       2 gstreamer1.0-alsa:amd64
       2 gstreamer1.0-fluendo-mp3:amd64
@@ -2758,17 +3315,9 @@
       2 gtk2-engines-murrine:amd64
       2 gucharmap
       2 gvfs:amd64
-      2 gvfs-backends
       2 gvfs-bin
-      2 gvfs-common
-      2 gvfs-daemons
-      2 gvfs-fuse
       2 gvfs-libs:amd64
-      2 gzip
       2 hardening-includes
-      2 hdparm
-      2 hicolor-icon-theme
-      2 hostname
       2 hplip
       2 hplip-data
       2 hud
@@ -2781,7 +3330,6 @@
       2 ibus-gtk3:amd64
       2 ibus-gtk:amd64
       2 ibus-table
-      2 ifupdown
       2 imagemagick
       2 imagemagick-common
       2 im-config
@@ -2795,32 +3343,19 @@
       2 indicator-printers
       2 indicator-session
       2 indicator-sound
-      2 info
-      2 initramfs-tools
+      2 init
       2 initramfs-tools-bin
-      2 initscripts
-      2 init-system-helpers
       2 inputattach
-      2 insserv
-      2 install-info
       2 intel-gpu-tools
       2 intltool-debian
-      2 iproute2
-      2 iptables
       2 iputils-arping
-      2 iputils-ping
       2 iputils-tracepath
       2 irqbalance
-      2 isc-dhcp-client
-      2 isc-dhcp-common
-      2 iso-codes
-      2 iw
-      2 kbd
+      2 jackd
+      2 jackd2
+      2 java-common
+      2 javascript-common
       2 kerneloops-daemon
-      2 keyboard-configuration
-      2 klibc-utils
-      2 kmod
-      2 krb5-locales
       2 language-pack-en
       2 language-pack-en-base
       2 language-pack-gnome-en
@@ -2828,7 +3363,6 @@
       2 language-selector-common
       2 language-selector-gnome
       2 laptop-detect
-      2 less
       2 libaa1:amd64
       2 libaacs0:amd64
       2 libaccount-plugin-generic-oauth
@@ -2836,29 +3370,26 @@
       2 libaccounts-glib0:amd64
       2 libaccountsservice0:amd64
       2 libacl1:amd64
-      2 libalgorithm-diff-perl
-      2 libalgorithm-diff-xs-perl
-      2 libalgorithm-merge-perl
       2 libandroid-properties1
       2 libao4:amd64
       2 libao-common
+      2 libapache2-mod-php5
       2 libapparmor1:amd64
       2 libapparmor-perl
       2 libappindicator3-1
       2 libapt-pkg-perl
       2 libarchive13:amd64
+      2 libarchive-extract-perl
       2 libarchive-zip-perl
       2 libart-2.0-2:amd64
       2 libasn1-8-heimdal:amd64
       2 libasound2:amd64
-      2 libasound2-data
       2 libasound2-plugins:amd64
       2 libasprintf-dev:amd64
       2 libassuan0:amd64
       2 libasyncns0:amd64
       2 libatasmart4:amd64
       2 libatk1.0-0:amd64
-      2 libatk1.0-data
       2 libatk-adaptor:amd64
       2 libatk-bridge2.0-0:amd64
       2 libatomic1:amd64
@@ -2866,7 +3397,6 @@
       2 libattr1:amd64
       2 libaudio2:amd64
       2 libaudit1:amd64
-      2 libaudit-common
       2 libauthen-sasl-perl
       2 libavahi-client3:amd64
       2 libavahi-common3:amd64
@@ -2883,6 +3413,8 @@
       2 libav-tools
       2 libavutil-ffmpeg54:amd64
       2 libbamf3-2:amd64
+      2 libbind9-90
+      2 libblas3
       2 libblkid1:amd64
       2 libbluetooth3:amd64
       2 libbluray1:amd64
@@ -2902,10 +3434,12 @@
       2 libcanberra-gtk-module:amd64
       2 libcanberra-pulse:amd64
       2 libcap2:amd64
-      2 libcap2-bin
-      2 libc-bin
-      2 libc-dev-bin
+      2 libcdio13
+      2 libcdio-cdda1
+      2 libcdio-paranoia1
       2 libcdparanoia0:amd64
+      2 libcgi-fast-perl
+      2 libcgi-pm-perl
       2 libcgmanager0:amd64
       2 libchromaprint0:amd64
       2 libclass-accessor-perl
@@ -2913,6 +3447,7 @@
       2 libclutter-1.0-0:amd64
       2 libclutter-1.0-common
       2 libclutter-gtk-1.0-0:amd64
+      2 libcmis-0.4-4
       2 libcogl-common
       2 libcolumbus1-common
       2 libcomerr2:amd64
@@ -2945,8 +3480,8 @@
       2 libdigest-hmac-perl
       2 libdjvulibre21:amd64
       2 libdjvulibre-text
+      2 libdns100
       2 libdotconf0:amd64
-      2 libdpkg-perl
       2 libdrm2:amd64
       2 libdrm-intel1:amd64
       2 libdrm-nouveau2:amd64
@@ -2960,16 +3495,16 @@
       2 libemail-valid-perl
       2 libenchant1c2a:amd64
       2 libencode-locale-perl
-      2 liberror-perl
+      2 libepoxy0
       2 libespeak1:amd64
-      2 libestr0
       2 libevent-2.0-5:amd64
       2 libexempi3:amd64
       2 libexif12:amd64
       2 libexpat1:amd64
-      2 libexttextcat-data
+      2 libexttextcat-2.0-0
       2 libfaad2:amd64
       2 libfakeroot:amd64
+      2 libfcgi-perl
       2 libfdk-aac0:amd64
       2 libffi6:amd64
       2 libfftw3-double3:amd64
@@ -2977,7 +3512,6 @@
       2 libfile-basedir-perl
       2 libfile-copy-recursive-perl
       2 libfile-desktopentry-perl
-      2 libfile-fcntllock-perl
       2 libfile-listing-perl
       2 libfile-mimeinfo-perl
       2 libflac8:amd64
@@ -3007,7 +3541,6 @@
       2 libgdata-common
       2 libgdbm3:amd64
       2 libgdk-pixbuf2.0-0:amd64
-      2 libgdk-pixbuf2.0-common
       2 libgee-0.8-2:amd64
       2 libgeis1:amd64
       2 libgeoclue0:amd64
@@ -3015,21 +3548,20 @@
       2 libgettextpo0:amd64
       2 libgettextpo-dev:amd64
       2 libgexiv2-2:amd64
+      2 libgksu2-0
       2 libgl1-mesa-dri:amd64
       2 libgl1-mesa-glx:amd64
       2 libglapi-mesa:amd64
       2 libglib2.0-0:amd64
-      2 libglib2.0-bin
-      2 libglib2.0-data
       2 libglu1-mesa:amd64
+      2 libgme0
       2 libgmime-2.6-0:amd64
       2 libgmp10:amd64
       2 libgnomekbd-common
       2 libgnome-keyring0:amd64
-      2 libgnome-keyring-common
+      2 libgnome-menu-3-0
       2 libgnutls-openssl27:amd64
       2 libgoa-1.0-0b:amd64
-      2 libgoa-1.0-common
       2 libgomp1:amd64
       2 libgpg-error0:amd64
       2 libgpgme11:amd64
@@ -3051,14 +3583,11 @@
       2 libgstreamer-plugins-base1.0-0:amd64
       2 libgstreamer-plugins-good1.0-0:amd64
       2 libgtk2.0-0:amd64
-      2 libgtk2.0-bin
-      2 libgtk2.0-common
       2 libgtk-3-0:amd64
-      2 libgtk-3-bin
-      2 libgtk-3-common
+      2 libgtkglext1
       2 libgtksourceview-3.0-1:amd64
       2 libgtksourceview-3.0-common
-      2 libgtop2-common
+      2 libgtop2-7
       2 libgudev-1.0-0:amd64
       2 libgusb2:amd64
       2 libgutenprint2
@@ -3082,8 +3611,10 @@
       2 libhud2:amd64
       2 libhunspell-1.3-0:amd64
       2 libhx509-5-heimdal:amd64
+      2 libhyphen0
       2 libibus-1.0-5:amd64
       2 libice6:amd64
+      2 libid3tag0
       2 libidn11:amd64
       2 libido3-0.1-0:amd64
       2 libiec61883-0:amd64
@@ -3096,6 +3627,9 @@
       2 libio-string-perl
       2 libipc-run-perl
       2 libipc-system-simple-perl
+      2 libisc95
+      2 libisccc90
+      2 libisccfg90
       2 libitm1:amd64
       2 libiw30:amd64
       2 libjack-jackd2-0:amd64
@@ -3104,57 +3638,62 @@
       2 libjbig2dec0
       2 libjpeg8:amd64
       2 libjpeg-turbo8:amd64
+      2 libjs-jquery
       2 libjson-c2:amd64
       2 libjson-glib-1.0-0:amd64
-      2 libjson-glib-1.0-common
       2 libk5crypto3:amd64
+      2 libkate1
       2 libkeyutils1:amd64
-      2 libklibc
       2 libkmod2:amd64
       2 libkrb5-26-heimdal:amd64
       2 libkrb5-3:amd64
       2 libkrb5support0:amd64
       2 libksba8:amd64
-      2 liblangtag-common
+      2 liblangtag1
+      2 liblapack3
       2 liblcms2-2:amd64
       2 libldap-2.4-2:amd64
       2 libldb1:amd64
+      2 liblightdm-gobject-1-0
       2 liblist-moreutils-perl
-      2 liblocale-gettext-perl
       2 liblockfile1:amd64
-      2 liblockfile-bin
+      2 liblog-message-simple-perl
       2 liblouis-data
       2 liblqr-1-0:amd64
       2 libltdl7:amd64
       2 liblua5.2-0:amd64
       2 liblwp-mediatypes-perl
       2 liblwp-protocol-https-perl
+      2 liblwres90
       2 liblzma5:amd64
       2 liblzo2-2:amd64
       2 libmad0:amd64
       2 libmagic1:amd64
       2 libmailtools-perl
       2 libmhash2:amd64
-      2 libmjpegutils-2.1-0
+      2 libmimic0
       2 libmm-glib0:amd64
       2 libmms0:amd64
       2 libmng2:amd64
       2 libmnl0:amd64
+      2 libmodplug1
+      2 libmodule-pluggable-perl
+      2 libmotif-common
       2 libmount1:amd64
+      2 libmozjs185-1.0
       2 libmp3lame0:amd64
       2 libmpc3:amd64
       2 libmpdec2:amd64
       2 libmpeg2-4:amd64
-      2 libmpeg2encpp-2.1-0
       2 libmpfr4:amd64
       2 libmpg123-0:amd64
-      2 libmplex2-2.1-0
       2 libmtdev1:amd64
       2 libmtp9:amd64
-      2 libmtp-common
       2 libmtp-runtime
+      2 libmythes-1.2-0
       2 libncurses5:amd64
       2 libncursesw5:amd64
+      2 libneon27-gnutls
       2 libnet-dbus-perl
       2 libnet-dns-perl
       2 libnet-domain-tld-perl
@@ -3182,9 +3721,10 @@
       2 libnux-4.0-0
       2 libnux-4.0-common
       2 liboauth0:amd64
+      2 libodfgen-0.1-1
+      2 libofa0
       2 libogg0:amd64
       2 libopenal1:amd64
-      2 libopenal-data
       2 libopencore-amrnb0:amd64
       2 libopencore-amrwb0:amd64
       2 liborc-0.4-0:amd64
@@ -3197,8 +3737,6 @@
       2 libpam0g:amd64
       2 libpam-gnome-keyring:amd64
       2 libpam-modules:amd64
-      2 libpam-modules-bin
-      2 libpam-runtime
       2 libpam-systemd:amd64
       2 libpango-1.0-0:amd64
       2 libpango1.0-0:amd64
@@ -3219,6 +3757,7 @@
       2 libpipeline1:amd64
       2 libpixman-1-0:amd64
       2 libpng12-0:amd64
+      2 libpod-latex-perl
       2 libpolkit-agent-1-0:amd64
       2 libpolkit-backend-1-0:amd64
       2 libpolkit-gobject-1-0:amd64
@@ -3238,6 +3777,8 @@
       2 libpython2.7-stdlib:amd64
       2 libpython3-stdlib:amd64
       2 libpython-stdlib:amd64
+      2 libqscintilla2-11
+      2 libqscintilla2-l10n
       2 libqt4-dbus:amd64
       2 libqt4-declarative:amd64
       2 libqt4-network:amd64
@@ -3276,22 +3817,16 @@
       2 libreadline6:amd64
       2 libreoffice-avmedia-backend-gstreamer
       2 libreoffice-base-core
-      2 libreoffice-calc
-      2 libreoffice-common
-      2 libreoffice-core
-      2 libreoffice-draw
       2 libreoffice-gnome
-      2 libreoffice-gtk
       2 libreoffice-help-en-us
-      2 libreoffice-impress
-      2 libreoffice-math
       2 libreoffice-ogltrans
       2 libreoffice-pdfimport
-      2 libreoffice-writer
+      2 libreoffice-style-galaxy
       2 librest-0.7-0:amd64
       2 libroken18-heimdal:amd64
       2 librsvg2-2:amd64
       2 librsvg2-common:amd64
+      2 libruby1.9.1
       2 libsamplerate0:amd64
       2 libsane:amd64
       2 libsane-common
@@ -3303,13 +3838,11 @@
       2 libsdl1.2debian:amd64
       2 libseccomp2:amd64
       2 libsecret-1-0:amd64
-      2 libsecret-common
       2 libselinux1:amd64
       2 libsemanage1:amd64
-      2 libsemanage-common
       2 libsensors4:amd64
       2 libsepol1:amd64
-      2 libsgutils2-2
+      2 libservlet2.5-java
       2 libshine3:amd64
       2 libshout3:amd64
       2 libsigsegv2:amd64
@@ -3329,7 +3862,6 @@
       2 libspeex1:amd64
       2 libspeexdsp1:amd64
       2 libsqlite3-0:amd64
-      2 libsrtp0
       2 libss2:amd64
       2 libssh-4:amd64
       2 libssl1.0.0:amd64
@@ -3343,17 +3875,14 @@
       2 libtcl8.6:amd64
       2 libtdb1:amd64
       2 libtelepathy-glib0:amd64
+      2 libterm-ui-perl
       2 libtevent0:amd64
-      2 libtext-charwidth-perl
-      2 libtext-iconv-perl
       2 libtext-levenshtein-perl
-      2 libtext-wrapi18n-perl
+      2 libtext-soundex-perl
       2 libthai0:amd64
-      2 libthai-data
       2 libtheora0:amd64
       2 libtie-ixhash-perl
       2 libtiff5:amd64
-      2 libtimedate-perl
       2 libtinfo5:amd64
       2 libtk8.6:amd64
       2 libtsan0:amd64
@@ -3387,6 +3916,8 @@
       2 libvorbis0a:amd64
       2 libvorbisenc2:amd64
       2 libvorbisfile3:amd64
+      2 libvte9
+      2 libvte-common
       2 libwacom2:amd64
       2 libwacom-common
       2 libwavpack1:amd64
@@ -3395,25 +3926,24 @@
       2 libwayland-egl1-mesa:amd64
       2 libwayland-server0:amd64
       2 libwbclient0:amd64
+      2 libwebkitgtk-3.0-common
       2 libwebp5:amd64
       2 libwebpmux1:amd64
       2 libwhoopsie-preferences0
       2 libwildmidi1:amd64
-      2 libwildmidi-config
       2 libwind0-heimdal:amd64
       2 libwmf0.2-7:amd64
       2 libwmf0.2-7-gtk
+      2 libwnck22
       2 libwnck-3-0:amd64
-      2 libwnck-3-common
-      2 libwnck-common
       2 libwrap0:amd64
       2 libwww-perl
       2 libwww-robotrules-perl
       2 libx11-6:amd64
-      2 libx11-data
       2 libx11-protocol-perl
       2 libx11-xcb1:amd64
       2 libx86-1:amd64
+      2 libxapian22
       2 libxatracker2:amd64
       2 libxau6:amd64
       2 libxaw7:amd64
@@ -3438,6 +3968,10 @@
       2 libxdamage1:amd64
       2 libxdmcp6:amd64
       2 libxext6:amd64
+      2 libxfce4ui-1-0
+      2 libxfce4util-bin
+      2 libxfce4util-common
+      2 libxfconf-0-2
       2 libxfixes3:amd64
       2 libxfont1:amd64
       2 libxft2:amd64
@@ -3446,6 +3980,7 @@
       2 libxkbcommon0:amd64
       2 libxkbcommon-x11-0:amd64
       2 libxkbfile1:amd64
+      2 libxklavier16
       2 libxml2:amd64
       2 libxml-parser-perl
       2 libxml-twig-perl
@@ -3460,6 +3995,7 @@
       2 libxslt1.1:amd64
       2 libxss1:amd64
       2 libxt6:amd64
+      2 libxtables10
       2 libxtst6:amd64
       2 libxv1:amd64
       2 libxvidcore4:amd64
@@ -3469,102 +4005,79 @@
       2 libyajl2:amd64
       2 libyaml-0-2:amd64
       2 libyaml-tiny-perl
+      2 libzbar0
       2 libzeitgeist-2.0-0:amd64
       2 libzvbi0:amd64
       2 libzvbi-common
-      2 lightdm
       2 light-themes
       2 lintian
       2 linux-firmware
       2 linux-headers-generic
       2 linux-libc-dev:amd64
       2 linux-sound-base
-      2 locales
-      2 login
-      2 logrotate
       2 lp-solve
-      2 lsb-base
-      2 lsb-release
       2 lshw
-      2 lsof
       2 ltrace
       2 m4
-      2 make
-      2 makedev
-      2 man-db
-      2 manpages
-      2 manpages-dev
-      2 mawk
       2 media-player-info
       2 memtest86+
       2 metacity-common
-      2 mime-support
       2 mlocate
       2 mobile-broadband-provider-info
-      2 mount
-      2 mountall
+      2 module-init-tools
       2 mousetweaks
       2 mscompress
       2 mtools
       2 mtr-tiny
-      2 multiarch-support
       2 mysql-common
       2 mythes-en-us
-      2 nano
       2 nautilus
       2 nautilus-data
       2 nautilus-sendto
       2 nautilus-share
-      2 ncurses-base
-      2 ncurses-bin
-      2 netbase
-      2 netcat-openbsd
+      2 ncurses-term
       2 netpbm
-      2 net-tools
       2 network-manager
       2 network-manager-gnome
       2 network-manager-pptp
       2 network-manager-pptp-gnome
+      2 nfs-common
       2 notify-osd
       2 notify-osd-icons
-      2 ntfs-3g
+      2 ntp
       2 nux-tools
       2 onboard
       2 onboard-data
       2 openoffice.org-hyphenation
       2 openprinting-ppds
-      2 openssh-client
-      2 openssl
+      2 openssh-server
+      2 openssh-sftp-server
       2 os-prober
       2 overlay-scrollbar
       2 overlay-scrollbar-gtk2:amd64
       2 oxideqt-codecs-extra:amd64
       2 p11-kit
       2 p11-kit-modules:amd64
-      2 parted
-      2 passwd
-      2 patch
       2 patchutils
       2 pciutils
       2 pcmciautils
-      2 perl
-      2 perl-base
-      2 pkg-config
+      2 perl-modules
+      2 php5
+      2 php5-cli
+      2 php5-common
+      2 php5-json
+      2 php5-readline
+      2 pinentry-gtk2
       2 plainbox-provider-checkbox
       2 plainbox-provider-resource-generic
       2 plainbox-secure-policy
-      2 plymouth
       2 plymouth-label
       2 plymouth-theme-ubuntu-logo
       2 plymouth-theme-ubuntu-text
       2 pm-utils
-      2 policykit-1
       2 policykit-1-gnome
       2 policykit-desktop-privileges
-      2 poppler-data
-      2 poppler-utils
       2 popularity-contest
-      2 powermgmt-base
       2 ppp
       2 pppconfig
       2 pppoeconf
@@ -3581,89 +4094,96 @@
       2 printer-driver-pxljr
       2 printer-driver-sag-gdi
       2 printer-driver-splix
-      2 procps
-      2 psmisc
       2 pulseaudio
       2 pulseaudio-module-bluetooth
       2 pulseaudio-module-x11
       2 pulseaudio-utils
-      2 python
-      2 python2.7
-      2 python2.7-minimal
-      2 python3
+      2 python3.4
+      2 python3.4-minimal
       2 python3-apport
-      2 python3-apt
       2 python3-aptdaemon
       2 python3-aptdaemon.gtk3widgets
       2 python3-aptdaemon.pkcompat
       2 python3-brlapi
       2 python3-cairo
-      2 python3-chardet
       2 python3-checkbox-support
       2 python3-commandnotfound
       2 python3-dbus
-      2 python3-debian
       2 python3-defer
       2 python3-distupgrade
       2 python3-feedparser
       2 python3-gdbm:amd64
       2 python3-gi
       2 python3-gi-cairo
+      2 python3-html5lib
       2 python3-httplib2
       2 python3-louis
       2 python3-lxml
       2 python3-mako
       2 python3-markupsafe
-      2 python3-minimal
+      2 python3-numpy
       2 python3-oauthlib
-      2 python3-pkg-resources
       2 python3-plainbox
       2 python3-problem-report
       2 python3-pyatspi
       2 python3-pycurl
       2 python3-pyparsing
-      2 python3-requests
-      2 python3-six
       2 python3-software-properties
       2 python3-speechd
-      2 python3-uno
       2 python3-update-manager
-      2 python3-urllib3
       2 python3-xdg
       2 python3-xkit
-      2 python-apt-common
-      2 python-minimal
-      2 python-talloc
-      2 qdbus
+      2 python-cairo
+      2 python-chardet
+      2 python-colorama
+      2 python-dbus
+      2 python-dbus-dev
+      2 python-distlib
+      2 python-gi
+      2 python-gobject
+      2 python-gobject-2
+      2 python-gtk2
+      2 python-html5lib
+      2 python-numpy
+      2 python-openssl
+      2 python-pip
+      2 python-pkg-resources
+      2 python-pyasn1
+      2 python-requests
+      2 python-serial
+      2 python-setuptools
+      2 python-six
+      2 python-support
+      2 python-tk
+      2 python-urllib3
+      2 python-wheel
+      2 qjackctl
       2 qpdf
       2 qt-at-spi:amd64
-      2 qtchooser
-      2 qtcore4-l10n
       2 qtdeclarative5-qtquick2-plugin:amd64
       2 qtdeclarative5-unity-action-plugin:amd64
-      2 readline-common
       2 remmina
       2 remmina-common
       2 remmina-plugin-rdp
       2 remmina-plugin-vnc
+      2 rename
       2 resolvconf
       2 rfkill
       2 rhythmbox
       2 rhythmbox-data
       2 rhythmbox-plugins
       2 rhythmbox-plugin-zeitgeist
-      2 rsync
-      2 rsyslog
+      2 rpcbind
       2 rtkit
+      2 ruby
+      2 ruby1.9.1
+      2 ruby1.9.1-dev
+      2 samba-common
       2 samba-libs:amd64
       2 sane-utils
       2 seahorse
-      2 sed
-      2 sensible-utils
       2 sessioninstaller
       2 session-migration
-      2 sgml-base
-      2 shared-mime-info
       2 shotwell
       2 shotwell-common
       2 signond
@@ -3678,9 +4198,6 @@
       2 sound-theme-freedesktop
       2 speech-dispatcher
       2 speech-dispatcher-audio-plugins:amd64
-      2 ssl-cert
-      2 strace
-      2 sudo
       2 suru-icon-theme
       2 syslinux
       2 syslinux-common
@@ -3688,13 +4205,11 @@
       2 system-config-printer-common
       2 system-config-printer-gnome
       2 system-config-printer-udev
-      2 sysvinit-utils
-      2 sysv-rc
+      2 systemd
+      2 systemd-sysv
       2 t1utils
-      2 tar
       2 tcl
       2 tcl8.6
-      2 tcpd
       2 tcpdump
       2 telnet
       2 thunderbird
@@ -3708,11 +4223,12 @@
       2 totem
       2 totem-common
       2 totem-plugins
+      2 traceroute
       2 transmission-common
       2 transmission-gtk
+      2 tree
       2 ttf-mscorefonts-installer
       2 ttf-ubuntu-font-family
-      2 tzdata
       2 ubuntu-artwork
       2 ubuntu-desktop
       2 ubuntu-docs
@@ -3733,9 +4249,6 @@
       2 ubuntu-touch-sounds
       2 ubuntu-ui-toolkit-theme
       2 ubuntu-wallpapers
-      2 ucf
-      2 udev
-      2 udisks2
       2 ufw
       2 unattended-upgrades
       2 unity
@@ -3773,9 +4286,7 @@
       2 unity-webapps-common
       2 unity-webapps-qml
       2 unity-webapps-service
-      2 uno-libs3
       2 unrar
-      2 unzip
       2 update-inetd
       2 update-manager
       2 update-manager-core
@@ -3783,67 +4294,38 @@
       2 update-notifier-common
       2 upower
       2 upstart
-      2 ure
       2 ureadahead
       2 usb-creator-common
       2 usb-creator-gtk
       2 usb-modeswitch
       2 usb-modeswitch-data
       2 usbmuxd
-      2 usbutils
-      2 util-linux
       2 uuid-runtime
+      2 v4l-utils
       2 vbetool
-      2 vim
-      2 vim-common
-      2 vim-runtime
-      2 vim-tiny
       2 vino
       2 wamerican
       2 wbritish
       2 webapp-container
       2 webbrowser-app
-      2 wget
-      2 whiptail
       2 whoopsie
       2 whoopsie-preferences
-      2 wireless-regdb
-      2 wireless-tools
-      2 wpasupplicant
       2 x11-apps
-      2 x11-common
       2 x11-session-utils
-      2 x11-utils
-      2 x11-xkb-utils
-      2 x11-xserver-utils
-      2 xauth
       2 xbitmaps
       2 xcursor-themes
-      2 xdg-user-dirs
       2 xdg-user-dirs-gtk
-      2 xdg-utils
       2 xdiagnose
+      2 xfconf
       2 xfonts-base
-      2 xfonts-encodings
       2 xfonts-scalable
-      2 xfonts-utils
-      2 xinit
       2 xinput
-      2 xkb-data
-      2 xml-core
       2 xorg
       2 xorg-docs-core
-      2 xserver-common
-      2 xserver-xorg
-      2 xserver-xorg-core
-      2 xserver-xorg-input-all
-      2 xserver-xorg-input-evdev
-      2 xserver-xorg-input-synaptics
       2 xserver-xorg-input-vmmouse
       2 xserver-xorg-input-wacom
       2 xserver-xorg-video-all
       2 xserver-xorg-video-ati
-      2 xserver-xorg-video-fbdev
       2 xserver-xorg-video-intel
       2 xserver-xorg-video-nouveau
       2 xserver-xorg-video-qxl
@@ -3852,12 +4334,289 @@
       2 xserver-xorg-video-vmware
       2 xterm
       2 xul-ext-ubufox
-      2 xz-utils
       2 yelp
       2 yelp-xsl
       2 zeitgeist-core
       2 zeitgeist-datahub
-      2 zenity
-      2 zenity-common
       2 zip
       2 zlib1g:amd64
+      3 acl
+      3 adduser
+      3 alsa-base
+      3 alsa-utils
+      3 apt
+      3 apt-utils
+      3 aspell
+      3 aspell-en
+      3 avahi-daemon
+      3 base-files
+      3 base-passwd
+      3 bash
+      3 bash-completion
+      3 bind9-host
+      3 binutils
+      3 bsdmainutils
+      3 bsdutils
+      3 build-essential
+      3 bzip2
+      3 ca-certificates
+      3 console-setup
+      3 coreutils
+      3 cpio
+      3 cpp
+      3 crda
+      3 cron
+      3 cups-bsd
+      3 cups-client
+      3 cups-common
+      3 curl
+      3 dash
+      3 dbus
+      3 dbus-x11
+      3 dc
+      3 dconf-service
+      3 debconf
+      3 debconf-i18n
+      3 debianutils
+      3 desktop-file-utils
+      3 dh-python
+      3 dictionaries-common
+      3 diffutils
+      3 dmidecode
+      3 dnsmasq-base
+      3 dosfstools
+      3 dpkg
+      3 dpkg-dev
+      3 e2fsprogs
+      3 ed
+      3 eject
+      3 fakeroot
+      3 file
+      3 findutils
+      3 fontconfig
+      3 fontconfig-config
+      3 fonts-dejavu-core
+      3 fonts-freefont-ttf
+      3 fonts-opensymbol
+      3 freepats
+      3 fuse
+      3 g++
+      3 gcc
+      3 gconf2
+      3 gconf2-common
+      3 gconf-service
+      3 gdb
+      3 geoip-database
+      3 gettext-base
+      3 gir1.2-atk-1.0
+      3 git
+      3 git-man
+      3 glib-networking-common
+      3 glib-networking-services
+      3 gnome-desktop3-data
+      3 gnome-menus
+      3 gnupg
+      3 gnupg2
+      3 gnupg-agent
+      3 gpgv
+      3 grep
+      3 groff-base
+      3 gsettings-desktop-schemas
+      3 gsfonts
+      3 gvfs-backends
+      3 gvfs-common
+      3 gvfs-daemons
+      3 gvfs-fuse
+      3 gzip
+      3 hdparm
+      3 hicolor-icon-theme
+      3 hostname
+      3 ifupdown
+      3 info
+      3 initramfs-tools
+      3 initscripts
+      3 init-system-helpers
+      3 insserv
+      3 install-info
+      3 iproute2
+      3 iptables
+      3 iputils-ping
+      3 isc-dhcp-client
+      3 isc-dhcp-common
+      3 iso-codes
+      3 iw
+      3 kbd
+      3 keyboard-configuration
+      3 klibc-utils
+      3 kmod
+      3 krb5-locales
+      3 less
+      3 libalgorithm-diff-perl
+      3 libalgorithm-diff-xs-perl
+      3 libalgorithm-merge-perl
+      3 libasound2-data
+      3 libatk1.0-data
+      3 libaudit-common
+      3 libcap2-bin
+      3 libc-bin
+      3 libc-dev-bin
+      3 libdpkg-perl
+      3 liberror-perl
+      3 libestr0
+      3 libexttextcat-data
+      3 libfile-fcntllock-perl
+      3 libgdk-pixbuf2.0-common
+      3 libglib2.0-bin
+      3 libglib2.0-data
+      3 libgnome-keyring-common
+      3 libgoa-1.0-common
+      3 libgtk2.0-bin
+      3 libgtk2.0-common
+      3 libgtk-3-bin
+      3 libgtk-3-common
+      3 libgtop2-common
+      3 libjson-glib-1.0-common
+      3 libklibc
+      3 liblangtag-common
+      3 liblocale-gettext-perl
+      3 liblockfile-bin
+      3 libmjpegutils-2.1-0
+      3 libmpeg2encpp-2.1-0
+      3 libmplex2-2.1-0
+      3 libmtp-common
+      3 libopenal-data
+      3 libpam-modules-bin
+      3 libpam-runtime
+      3 libreoffice-calc
+      3 libreoffice-common
+      3 libreoffice-core
+      3 libreoffice-draw
+      3 libreoffice-gtk
+      3 libreoffice-impress
+      3 libreoffice-math
+      3 libreoffice-writer
+      3 libsecret-common
+      3 libsemanage-common
+      3 libsgutils2-2
+      3 libsrtp0
+      3 libtext-charwidth-perl
+      3 libtext-iconv-perl
+      3 libtext-wrapi18n-perl
+      3 libthai-data
+      3 libtimedate-perl
+      3 libwildmidi-config
+      3 libwnck-3-common
+      3 libwnck-common
+      3 libx11-data
+      3 lightdm
+      3 locales
+      3 login
+      3 logrotate
+      3 lsb-base
+      3 lsb-release
+      3 lsof
+      3 make
+      3 makedev
+      3 man-db
+      3 manpages
+      3 manpages-dev
+      3 mawk
+      3 mime-support
+      3 mount
+      3 mountall
+      3 multiarch-support
+      3 nano
+      3 ncurses-base
+      3 ncurses-bin
+      3 netbase
+      3 netcat-openbsd
+      3 net-tools
+      3 ntfs-3g
+      3 openssh-client
+      3 openssl
+      3 parted
+      3 passwd
+      3 patch
+      3 perl
+      3 perl-base
+      3 pkg-config
+      3 plymouth
+      3 policykit-1
+      3 poppler-data
+      3 poppler-utils
+      3 powermgmt-base
+      3 procps
+      3 psmisc
+      3 python
+      3 python2.7
+      3 python2.7-minimal
+      3 python3
+      3 python3-apt
+      3 python3-chardet
+      3 python3-debian
+      3 python3-minimal
+      3 python3-pkg-resources
+      3 python3-requests
+      3 python3-six
+      3 python3-uno
+      3 python3-urllib3
+      3 python-apt-common
+      3 python-minimal
+      3 python-talloc
+      3 qdbus
+      3 qtchooser
+      3 qtcore4-l10n
+      3 readline-common
+      3 rsync
+      3 rsyslog
+      3 sed
+      3 sensible-utils
+      3 sgml-base
+      3 shared-mime-info
+      3 ssl-cert
+      3 strace
+      3 sudo
+      3 sysvinit-utils
+      3 sysv-rc
+      3 tar
+      3 tcpd
+      3 tzdata
+      3 ucf
+      3 udev
+      3 udisks2
+      3 uno-libs3
+      3 unzip
+      3 ure
+      3 usbutils
+      3 util-linux
+      3 vim
+      3 vim-common
+      3 vim-runtime
+      3 vim-tiny
+      3 wget
+      3 whiptail
+      3 wireless-regdb
+      3 wireless-tools
+      3 wpasupplicant
+      3 x11-common
+      3 x11-utils
+      3 x11-xkb-utils
+      3 x11-xserver-utils
+      3 xauth
+      3 xdg-user-dirs
+      3 xdg-utils
+      3 xfonts-encodings
+      3 xfonts-utils
+      3 xinit
+      3 xkb-data
+      3 xml-core
+      3 xserver-common
+      3 xserver-xorg
+      3 xserver-xorg-core
+      3 xserver-xorg-input-all
+      3 xserver-xorg-input-evdev
+      3 xserver-xorg-input-synaptics
+      3 xserver-xorg-video-fbdev
+      3 xz-utils
+      3 zenity
+      3 zenity-common
