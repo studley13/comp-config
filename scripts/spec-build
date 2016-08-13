@@ -6,8 +6,9 @@ if [ $UID -ne 0 ]; then
     exit 1
 fi
 
+for spec in "$@"; do
 rpmuser="makerpm"
-specFile="$1"
+specFile="$spec"
 specName="$(basename "$specFile")"
 rpmHome="$(cat /etc/passwd | awk -F ':' "{if (\$1==\"${rpmuser}\") print \$6}")"
 rpmSpecs="${rpmHome}/rpmbuild/SPECS/"
@@ -19,6 +20,7 @@ sudo -u "$rpmuser" /bin/bash << __endSudo
 cd "${rpmSpecs}"
 rpmbuild -bb "${specName}"
 __endSudo
+done
 
 cp -rv "${rpmHome}/rpmbuild/RPMS/"* "$(dirname "$0")/../rpm/"
 chown -R "${SUDO_USER}:${SUDO_GROUP}" "$(dirname "$0")/../rpm"
