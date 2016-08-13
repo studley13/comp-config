@@ -1,0 +1,17 @@
+#!/bin/bash
+set -e
+
+if [ $UID -ne 0 ]; then
+    echo "Must be run as root"
+    exit 1
+fi
+
+dnf install -y @development-tools fedora-packager rpmdevtools
+
+username="makerpm"
+useradd -c "RPM creator" -d "/home/$username" -m -r -s "/bin/bash" -U -G mock "$username"
+
+sudo -u makerpm /bin/bash << __endScript
+    cd
+    rpmdev-setuptree
+__endScript

@@ -1,0 +1,20 @@
+#!/bin/bash
+set -e
+
+# relocate
+pushd $(dirname $0) > /dev/null
+
+# The base url for rpm-fusion
+freePkg="http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm"
+nonfreePkg="http://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm"
+dirPrefix="../rpm/noarch"
+
+mkdir -p "${dirPrefix}"
+wget -P $dirPrefix $freePkg $nonfreePkg
+
+if [ $UID -eq 0 ]; then
+    chown -R "${SUDO_USER}:${SUDO_GROUP}" "$dirPrefix"
+fi
+
+# Return to location
+popd > /dev/null

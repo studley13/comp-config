@@ -1,0 +1,87 @@
+#!/bin/bash
+set -e
+
+# Ensure root
+if [ $UID -ne 0 ]; then
+    echo "Must be run as root"
+    exit 1
+fi
+
+tempdir="$(mktemp -d)"
+chmod 755 "${tempdir}"
+rpmuser="makerpm"
+
+# Relocate
+pushd "$tempdir" > /dev/null
+
+baseUrl="http://fontawesome.io/"
+curl -Ls "$baseUrl" | grep -o "[^\"]*\.zip" | wget -i - -B "$baseUrl"
+
+name="font-awesome"
+file="$(ls | grep "$name")"
+echo $file
+version="$( echo "$file" | grep -o "[0-9\.]*[0-9]")"
+echo $version
+
+echo -e "\e[36;1mPackaging \e[33m${name}\e[36m ver \e[33m${version}\e[36m...\e[0m"
+
+# Extract
+unzip "$file" > /dev/null
+fontFile=$(find "$(basename -s ".zip" "$file")" -name "*.otf")
+mkdir -p "${name}"
+mv "$fontFile" "${name}/"
+
+# Tarball
+tarball="${name}_${version}.tgz"
+tar -czf "$tarball" "$name"
+chmod 644 "${tarball}"
+
+rpmhome="$(cat /etc/passwd | awk -F ':' "{if (\$1==\"${rpmuser}\") print \$6}")"
+
+sudo -u "${rpmuser}" /bin/bash << __endSudo
+cd "${rpmhome}/rpmbuild/"
+
+# Copy the tarball as a source
+cp "${tempdir}/${tarball}" "SOURCES/"
+
+# Create a new spec
+cd "SPECS/"
+cat > "${name}.spec" << __endSpec
+Summary: 	Automatically generated RPM for font ${name}
+Name: 		${name}
+Version: 	${version}
+Release: 	1%{?dist}
+Source:		${tarball}
+
+URL:		${baseUrl}
+License:	OFL
+BuildArch:	noarch
+
+%description
+A package containing the font: ${name}
+
+%global debug_package %{nil}
+
+%prep
+%autosetup -n %{name}
+
+%build
+
+%install
+mkdir -p %{buildroot}/usr/share/fonts/
+cp -rv . %{buildroot}/usr/share/fonts/%{name}
+
+%files
+/usr/share/fonts/%{name}
+
+__endSpec
+rpmbuild -bb "${name}.spec"
+__endSudo
+
+# Return
+popd > /dev/null
+
+mkdir -p "$(dirname "$0")/../rpm/"
+cp -rv "${rpmhome}/rpmbuild/RPMS/"* "$(dirname "$0")/../rpm/"
+chown -R "${SUDO_USER}:${SUDO_GROUP}" "$(dirname "$0")/../rpm"
+rm -rf "$tempdir"

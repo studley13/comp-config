@@ -1,0 +1,24 @@
+#!/bin/bash
+set -e
+
+if [ $UID -ne 0 ]; then
+    echo "Must be run as root."
+    exit 1
+fi
+
+rpmuser="makerpm"
+specFile="$1"
+specName="$(basename "$specFile")"
+rpmHome="$(cat /etc/passwd | awk -F ':' "{if (\$1==\"${rpmuser}\") print \$6}")"
+rpmSpecs="${rpmHome}/rpmbuild/SPECS/"
+
+cp "$specFile" "$rpmSpecs"
+chmod 644 "$rpmSpecs/$specName"
+
+sudo -u "$rpmuser" /bin/bash << __endSudo
+cd "${rpmSpecs}"
+rpmbuild -bb "${specName}"
+__endSudo
+
+cp -rv "${rpmHome}/rpmbuild/RPMS/"* "$(dirname "$0")/../rpm/"
+chown -R "${SUDO_USER}:${SUDO_GROUP}" "$(dirname "$0")/../rpm"
