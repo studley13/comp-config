@@ -1,17 +1,16 @@
 Name:		curtis-tools
 Version:	1.0
-Release:	1%{?dist}
+Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
 Group:		Applications/Multimedia
 License:	ISC
 BuildArch:	noarch
 
-Requires:	rpmfusion-free-release
-Requires:	rpmfusion-nonfree-release
+Requires:	curtis-repos
 Requires:	android-tools
-Requires:	httpd php fcgi mod_fcgi mod_h264_streaming
-Requires:	aspell spell
+Requires:	httpd php fcgi mod_fcgid mod_h264_streaming
+Requires:	aspell
 Requires:	avahi
 Requires:	bash zsh bash-completion tmux tree
 Requires:	bind-utils
@@ -20,7 +19,7 @@ Requires:	nfs-utils
 Requires:	binwalk
 Requires:	bzip2 gzip zip unzip unrar tar
 Requires:	clang llvm
-#Requires:	rust
+Requires:	rustc
 Requires:	java-1.8.0-openjdk
 Requires:	wget curl
 Requires:	docker

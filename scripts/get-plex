@@ -1,0 +1,72 @@
+#!/usr/bin/env python
+
+from urllib2 import urlopen
+from os.path import basename, dirname, isdir
+from os import remove, makedirs
+from json import load
+import sha
+from sys import stdout
+
+API_URL = "https://plex.tv/api/downloads/1.json"
+RPM_DIR = dirname(__file__) + "/../rpm/x86_64/"
+BLOCK_SIZE = 1024 * 16
+
+if not isdir(RPM_DIR):
+    makedirs(RPM_DIR, 0755)
+
+def sizeFmt(size):
+    suffix = ["B", "KiB", "MiB", "GiB"]
+    n = 0
+    while (size > 1024):
+        n += 1
+        size /= 1024.0
+    return "{:.2f}{}".format(float(size), suffix[n])
+
+
+plexData = load(urlopen(API_URL))
+releases = plexData['computer']['Linux']['releases']
+
+release = None
+checksum = None
+r = 0
+
+while ((release == None) and (r < len(releases))):
+    if ((releases[r]['distro'] == 'redhat') and (releases[r]['build'].endswith("x86_64"))):
+        release = releases[r]
+    r += 1
+
+if (release != None):
+    url = release['url']
+    checksum = release['checksum']
+    filename = basename(url)
+
+    print "Downloading", url
+    request = urlopen(url)
+    store = file(RPM_DIR + filename, 'wb')
+    written = 0
+    block = request.read(BLOCK_SIZE)
+    while (len(block) != 0):
+        written += BLOCK_SIZE
+        store.write(block)
+        stdout.write("\033[GTransferred {:>12}".format(sizeFmt(written)))
+        block = request.read(BLOCK_SIZE)
+    stdout.write("\033[GTransferred {:>12}\n".format(sizeFmt(written)))
+    store.close()
+
+    print "Checking SHA sum of", filename
+    store = file(RPM_DIR + filename, 'rb')
+    urlsum = sha.new(store.read())
+    store.close()
+
+    if (urlsum.hexdigest() != checksum):
+        print "Expected checksum:", checksum
+        print "Actual checksum:  ", urlsum.hexdigest()
+        remove(RPM_DIR + filename)
+        raise IOError("Transmission failed checksum")
+
+    request.close()
+
+    print "Downloaded {}  successfully".format(filename)
+else:
+    raise IOError("No package found on server")
+    

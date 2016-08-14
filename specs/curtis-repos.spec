@@ -1,21 +1,20 @@
-Name:		curtis-host-core
+Name:		curtis-repos
 Version:	1.0
 Release:	1.multi
-Summary:	Meta-package for installing software for host 'core'
+Summary:	Meta-package for installing repos
 
-Group:		Applications/System
+Group:		System Environment/Base
 License:	ISC
 BuildArch:	noarch
 
-Requires:	curtis-repos
 Requires:	rpmfusion-free-release
 Requires:	rpmfusion-nonfree-release
-Requires:	curtis-tools
-Requires:	curtis-media
-Requires:	curtis-server
+Requires:	google-chrome-repo
+Requires:	skype-repo
+Requires:	vivaldi-repo
 
 %description
-Package dependancies for Intel NUC
+Standard repositories
 
 %prep
 

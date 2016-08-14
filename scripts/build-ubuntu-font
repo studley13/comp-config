@@ -48,7 +48,7 @@ cat > "${name}.spec" << __endSpec
 Summary: 	Automatically generated RPM for font ${name}
 Name: 		${name}
 Version: 	${version}
-Release: 	1%{?dist}
+Release: 	1.multi
 Source:		${tarball}
 
 URL:		${baseUrl}

@@ -1,14 +1,13 @@
 Name:		curtis-av
 Version:	1.0
-Release:	1%{?dist}
+Release:	1.multi
 Summary:	Meta-package for installing AV software
 
 Group:		Applications/Multimedia
 License:	ISC
 BuildArch:	noarch
 
-Requires:	rpmfusion-free-release
-Requires:	rpmfusion-nonfree-release
+Requires:	curtis-repos
 Requires:	audacity 
 Requires:	blender 
 Requires:	dcraw 

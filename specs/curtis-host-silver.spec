@@ -1,14 +1,13 @@
 Name:		curtis-host-silver
 Version:	1.0
-Release:	1%{?dist}
+Release:	1.multi
 Summary:	Meta-package for installing software for host 'silver'
 
 Group:		Applications/System
 License:	ISC
 BuildArch:	noarch
 
-Requires:	rpmfusion-free-release
-Requires:	rpmfusion-nonfree-release
+Requires:	curtis-repos
 Requires:	curtis-desk
 Requires:	curtis-tools
 Requires:	curtis-media

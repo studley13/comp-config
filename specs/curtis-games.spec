@@ -1,14 +1,13 @@
 Name:		curtis-games
 Version:	1.0
-Release:	1%{?dist}
+Release:	1.multi
 Summary:	Meta-package for installing games
 
 Group:		Applications/Multimedia
 License:	ISC
 BuildArch:	noarch
 
-Requires:	rpmfusion-free-release
-Requires:	rpmfusion-nonfree-release
+Requires:	curtis-repos
 Requires:	aisleriot
 Requires:	armacycles-ad
 Requires:	four-in-a-row

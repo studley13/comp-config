@@ -12,15 +12,20 @@ specFile="$spec"
 specName="$(basename "$specFile")"
 rpmHome="$(cat /etc/passwd | awk -F ':' "{if (\$1==\"${rpmuser}\") print \$6}")"
 rpmSpecs="${rpmHome}/rpmbuild/SPECS/"
+rpmSources="${rpmHome}/rpmbuild/SOURCES/"
 
 cp "$specFile" "$rpmSpecs"
 chmod 644 "$rpmSpecs/$specName"
 
 sudo -u "$rpmuser" /bin/bash << __endSudo
+cd "${rpmSources}"
+spectool -g -R "${rpmSpecs}${specName}"
 cd "${rpmSpecs}"
 rpmbuild -bb "${specName}"
+rpmbuild -bb --target x86_64-centos-linux "${specName}"
 __endSudo
 done
 
+mkdir -p "$(dirname "$0")/../rpm/"
 cp -rv "${rpmHome}/rpmbuild/RPMS/"* "$(dirname "$0")/../rpm/"
 chown -R "${SUDO_USER}:${SUDO_GROUP}" "$(dirname "$0")/../rpm"

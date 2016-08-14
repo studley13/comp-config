@@ -1,14 +1,13 @@
 Name:		curtis-media
 Version:	1.0
-Release:	1%{?dist}
+Release:	1.multi
 Summary:	Meta-package for installing media software and codecs
 
 Group:		Applications/Multimedia
 License:	ISC
 BuildArch:	noarch
 
-Requires:	rpmfusion-free-release
-Requires:	rpmfusion-nonfree-release
+Requires:	curtis-repos
 
 # Codecs
 Requires:	gstreamer gstreamer-tools
@@ -26,7 +25,7 @@ Requires:	x265 x265-libs
 Requires:	libtheora
 Requires:	libaacs-utils libaacs
 Requires:	faad2 faac
-Requires:	libavdevice libav
+Requires:	libavdevice
 Requires:	flac flac-libs
 
 # Tools
