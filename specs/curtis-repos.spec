@@ -12,6 +12,8 @@ Requires:	rpmfusion-nonfree-release
 Requires:	google-chrome-repo
 Requires:	skype-repo
 Requires:	vivaldi-repo
+Requires:	ntop-repo
+Requires:	handbrake-repo
 
 %description
 Standard repositories

@@ -8,7 +8,7 @@ Group:		System Environment/Daemons
 License:	ISC
 URL:		http://www.ntop.org/
 
-Requires:	epel-release
+#Requires:	epel-release
 
 %description
 Package to install the repository of the ntopng service.

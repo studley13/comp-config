@@ -1,0 +1,19 @@
+#!/bin/bash
+set -e
+
+if [ $UID -ne 0 ]; then
+    echo "Must be run as root."
+    exit 1
+fi
+
+dnf install -y createrepo
+
+# Locate repos
+cd "$(dirname $0)/../rpm"
+
+# Cerate each repo
+for repo in *; do
+    pushd "$repo" > /dev/null
+    createrepo -d `pwd`
+    popd > /dev/null
+done

@@ -6,6 +6,20 @@ if [ $UID -ne 0 ]; then
     exit 1
 fi
 
+TARGET=""
+
+while getopts "t:" option; do
+    case "$option" in
+        t)
+            TARGET="--target $OPTARG"
+            echo $TARGET
+            ;;
+    esac
+done
+
+shift $((OPTIND-1))
+
+
 for spec in "$@"; do
 rpmuser="makerpm"
 specFile="$spec"
@@ -17,12 +31,15 @@ rpmSources="${rpmHome}/rpmbuild/SOURCES/"
 cp "$specFile" "$rpmSpecs"
 chmod 644 "$rpmSpecs/$specName"
 
+# Install dependancies
+dnf builddep -y "${rpmSpecs}${specName}"
+
 sudo -u "$rpmuser" /bin/bash << __endSudo
 cd "${rpmSources}"
 spectool -g -R "${rpmSpecs}${specName}"
 cd "${rpmSpecs}"
-rpmbuild -bb "${specName}"
-rpmbuild -bb --target x86_64-centos-linux "${specName}"
+rpmbuild ${TARGET} -bb "${specName}"
+#rpmbuild -bb --target x86_64-centos-linux "${specName}"
 __endSudo
 done
 

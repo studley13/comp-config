@@ -19,6 +19,8 @@ Requires:	mypaint
 Requires:	rawtherapee
 #Requires:	obs-studio
 Requires:	libwacom xorg-x11-drv-wacom
+Requires:	handbrake-gui handbrake-cli
+Requires:	libdvdcss
 
 %description
 A collection of multimedia software inclding audio tools, 3D modelling
