@@ -1,7 +1,7 @@
-Name:		curtis-host-blue
-Version:	1.1
+Name:		curtis-desk
+Version:	1.2
 Release:	1.multi
-Summary:	Meta-package for installing software for host 'blue'
+Summary:	Meta-package for installing desktop and GUI software
 
 Group:		Applications/System
 License:	ISC
@@ -9,10 +9,13 @@ BuildArch:	noarch
 
 Requires:	curtis-repos
 Requires:	curtis-desk
-Requires:	curtis-tools
+Requires:	chrome-remote-desktop
+Requires:	google-chrome-stable
+Requires:	skypeforlinux
+Requires:	vivaldi-stable
 
 %description
-Package dependancies for Blue Thinkpad x100e
+Standard desktop and GUI software
 
 %prep
 

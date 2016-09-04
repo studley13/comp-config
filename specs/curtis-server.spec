@@ -8,6 +8,7 @@ License:	ISC
 BuildArch:	noarch
 
 Requires:	ntop-repo
+Requires:	mariadb-common mariadb-libs
 Requires:	plexmediaserver
 Requires:	opensmtpd
 Requires:	transmission transmission-daemon transmission-common

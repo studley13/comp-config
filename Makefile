@@ -10,9 +10,9 @@ META_SPECS=specs/curtis-av.spec specs/curtis-desk.spec specs/curtis-games.spec\
 	specs/curtis-repos.spec specs/curtis-server.spec\
 	specs/curtis-tools.spec  
 
-BINARY_SPECS=specs/i3blocks.spec specs/playerctl.spec specs/rust.spec 
-
-BINARY32_SPECS=specs/i3blocks.spec specs/playerctl.spec specs/rust-32.spec 
+PRE_BINARY_SPECS=specs/rust.spec
+PRE32_BINARY_SPECS=specs/rust-32.spec
+BINARY_SPECS=specs/i3blocks.spec specs/playerctl.spec
 
 REPO_SPECS=specs/handbrake-repo.spec specs/google-chrome-repo.spec\
 	specs/ntop-repo.spec specs/skype-repo.spec specs/vivaldi-repo.spec
@@ -52,9 +52,9 @@ repo-specs:	$S/spec-build $(REPO_SPECS) $(RPM_HOME)
 noarch:	ubuntu-font font-awesome meta-specs
 
 binary-specs:	$S/spec-build $(BINARY_SPECS) $(RPM_HOME)
-	$S/spec-build $(BINARY_SPECS)
-	setarch i386 $S/spec-build $(BINARY32_SPECS)
-	setarch i686 $S/spec-build $(BINARY32_SPECS)
+	$S/spec-build -b $(BINARY_SPECS)
+	$S/spec-build -t $(PRE_BINARY_SPECS)
+	$S/spec-build -t i386 $(PRE32_BINARY_SPECS)
 
 repodata:
 	$S/createrepo

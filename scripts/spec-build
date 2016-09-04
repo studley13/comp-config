@@ -7,12 +7,15 @@ if [ $UID -ne 0 ]; then
 fi
 
 TARGET=""
+BINARY=0
 
-while getopts "t:" option; do
+while getopts "t:b" option; do
     case "$option" in
         t)
             TARGET="--target $OPTARG"
-            echo $TARGET
+            ;;
+	b)
+            BINARY=1
             ;;
     esac
 done
@@ -20,13 +23,14 @@ done
 shift $((OPTIND-1))
 
 
-for spec in "$@"; do
 rpmuser="makerpm"
-specFile="$spec"
-specName="$(basename "$specFile")"
 rpmHome="$(cat /etc/passwd | awk -F ':' "{if (\$1==\"${rpmuser}\") print \$6}")"
 rpmSpecs="${rpmHome}/rpmbuild/SPECS/"
 rpmSources="${rpmHome}/rpmbuild/SOURCES/"
+srpms="${rpmHome}/rpmbuild/SRPMS/"
+for spec in "$@"; do
+specFile="$spec"
+specName="$(basename "$specFile")"
 
 cp "$specFile" "$rpmSpecs"
 chmod 644 "$rpmSpecs/$specName"
@@ -38,11 +42,21 @@ sudo -u "$rpmuser" /bin/bash << __endSudo
 cd "${rpmSources}"
 spectool -g -R "${rpmSpecs}${specName}"
 cd "${rpmSpecs}"
-rpmbuild ${TARGET} -bb "${specName}"
-#rpmbuild -bb --target x86_64-centos-linux "${specName}"
+rpmbuild ${TARGET} -ba "${specName}"
 __endSudo
+
+if [ $BINARY -eq 1 ]; then
+echo "Building i386 ${specName}"
+sudo -u "$rpmuser" /bin/bash << __endSudo
+cd "${srpms}"
+mkdir -p "${rpmHome}/rpmbuild/RPMS/i386"
+/usr/bin/mock -r fedora-24-i386 --rebuild $(basename -s .spec "${specName}")* \
+    --resultdir "${rpmHome}/rpmbuild/RPMS/i386"
+__endSudo
+fi
 done
 
 mkdir -p "$(dirname "$0")/../rpm/"
+echo ${rpmHome}
 cp -rv "${rpmHome}/rpmbuild/RPMS/"* "$(dirname "$0")/../rpm/"
 chown -R "${SUDO_USER}:${SUDO_GROUP}" "$(dirname "$0")/../rpm"

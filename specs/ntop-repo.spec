@@ -1,5 +1,5 @@
 Name:		ntop-repo
-Version:	1.0
+Version:	1.2
 Release:	1.multi
 Summary:	Package to install the ntop-repo
 BuildArch:	noarch
@@ -24,10 +24,17 @@ Package to install the repository of the ntopng service.
 mkdir -p %{buildroot}/etc/yum.repos.d/
 cat > %{buildroot}/etc/yum.repos.d/ntop.repo << __endRepo
 [ntop]
-name=ntop CentOS repository
-baseurl=http://packages.ntop.org/centos/7/\$basearch/
+name=ntop packages
+baseurl=http://packages.ntop.org/centos-stable/7/\$basearch/
 enabled=1
-gpgcheck=0
+gpgcheck=1
+gpgkey=http://packages.ntop.org/centos-stable/RPM-GPG-KEY-deri
+[ntop-noarch]
+name=ntop packages
+baseurl=http://packages.ntop.org/centos-stable/7/noarch/
+enabled=1
+gpgcheck=1
+gpgkey=http://packages.ntop.org/centos-stable/RPM-GPG-KEY-deri
 __endRepo
 
 

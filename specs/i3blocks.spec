@@ -1,5 +1,5 @@
 Name:		i3blocks
-Version:	1.0
+Version:	1.4
 Release:	1.multi
 Summary:	A block based provider for i3bar
 
@@ -19,14 +19,19 @@ Blocky json interface to i3bar
 %prep
 rm -rf %{name}
 git clone http://github.com/vivien/i3blocks %{name}
+git clone http://github.com/vivien/i3blocks-contrib %{name}/i3-contrib
 
 
 %build
+pushd %{name} > /dev/null
+make clean all
+popd > /dev/null
 
 
 %install
 pushd %{name} > /dev/null
 %make_install
+cp i3-contrib/mediaplayer/mediaplayer %{buildroot}%{_prefix}/libexec/i3blocks/
 popd > /dev/null
 
 

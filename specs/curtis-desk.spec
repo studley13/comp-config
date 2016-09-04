@@ -1,5 +1,5 @@
 Name:		curtis-desk
-Version:	1.0
+Version:	1.4
 Release:	1.multi
 Summary:	Meta-package for installing desktop and GUI software
 
@@ -8,12 +8,15 @@ License:	ISC
 BuildArch:	noarch
 
 Requires:	curtis-repos
+Requires:	acpi
+Requires:	systsat
+Requires:	xorg-x11-xinit-session
+Requires:	perl-Env
 Requires:	anthy
 Requires:	baobab
 Requires:	Thunar
 Requires:	cdparanoia
-Requires:	chromium
-Requires:	chrome-remote-desktop
+Requires:	chromium chromium-libs chromium-libs-media
 Requires:	dropbox
 Requires:	eog
 Requires:	evince
@@ -29,7 +32,6 @@ Requires:	gnome-power-manager
 Requires:	gnome-screenshot
 Requires:	gnome-system-monitor
 Requires:	xfce4-terminal
-Requires:	google-chrome-stable
 Requires:	gparted
 Requires:	i3 i3lock i3status
 Requires:	i3blocks
@@ -52,9 +54,7 @@ Requires:	remmina
 #Requires:	ripit
 Requires:	seahorse
 Requires:	simple-scan
-Requires:	skype
 Requires:	VirtualGL
-Requires:	vivaldi-stable
 #Requires:	wine
 Requires:	dosbox
 Requires:	wireshark
@@ -64,6 +64,7 @@ Requires:	network-manager-applet
 Requires:	font-awesome
 Requires:	ubuntu-font-family
 Requires:	gucharmap
+Requires:	faience-icon-theme
 
 %description
 Standard desktop and GUI software

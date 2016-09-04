@@ -1,5 +1,5 @@
 Name:		playerctl
-Version:	1.0
+Version:	1.2
 Release:	1.multi
 Summary:	Control all the media players
 

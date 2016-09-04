@@ -1,5 +1,5 @@
 Name:		curtis-host-silver
-Version:	1.0
+Version:	1.1
 Release:	1.multi
 Summary:	Meta-package for installing software for host 'silver'
 
@@ -8,7 +8,7 @@ License:	ISC
 BuildArch:	noarch
 
 Requires:	curtis-repos
-Requires:	curtis-desk
+Requires:	curtis-desk-full
 Requires:	curtis-tools
 Requires:	curtis-media
 Requires:	curtis-av
