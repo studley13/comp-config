@@ -25,9 +25,10 @@ Automatically built installer for binaryninja
 
 
 %install
-mkdir -p %{buildroot}%{prefix}/binaryninja
-cp -rv %{builddir}/* %{buildroot}%{prefix}/binaryninja
-ln -s %{prefix}/binaryninja/binaryninja /usr/local/bin/binaryninja
+mkdir -p %{buildroot}%{_prefix}
+cp -rv %{_builddir}/* %{buildroot}%{_prefix}
+mkdir -p %{buildroot}/usr/local/bin
+ln -s %{_prefix}/binaryninja/binaryninja %{buildroot}/usr/local/bin/
 
 
 %files
