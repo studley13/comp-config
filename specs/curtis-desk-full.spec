@@ -1,4 +1,4 @@
-Name:		curtis-desk
+Name:		curtis-desk-full
 Version:	1.2
 Release:	1.multi
 Summary:	Meta-package for installing desktop and GUI software

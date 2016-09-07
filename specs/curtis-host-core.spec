@@ -1,5 +1,5 @@
 Name:		curtis-host-core
-Version:	1.0
+Version:	1.1
 Release:	1.multi
 Summary:	Meta-package for installing software for host 'core'
 
@@ -13,6 +13,7 @@ Requires:	rpmfusion-nonfree-release
 Requires:	curtis-tools
 Requires:	curtis-media
 Requires:	curtis-server
+Requires:	libva-intel-driver
 
 %description
 Package dependancies for Intel NUC

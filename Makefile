@@ -8,7 +8,7 @@ META_SPECS=specs/curtis-av.spec specs/curtis-desk.spec specs/curtis-games.spec\
 	specs/curtis-host-core.spec specs/curtis-host-monolith.spec\
 	specs/curtis-host-silver.spec specs/curtis-media.spec\
 	specs/curtis-repos.spec specs/curtis-server.spec\
-	specs/curtis-tools.spec  
+	specs/curtis-tools.spec specs/curtis-desk-full.spec 
 
 PRE_BINARY_SPECS=specs/rust.spec
 PRE32_BINARY_SPECS=specs/rust-32.spec
