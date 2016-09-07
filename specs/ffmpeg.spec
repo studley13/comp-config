@@ -11,10 +11,10 @@
 %endif
 
 # Turn on everything
-%global _with_celt        1
+#%global _with_celt        1
 %global _with_dirac       1
 %global _with_faac        1
-%global _with_fdk_aac     1
+#%global _with_fdk_aac     1
 %global _with_jack        1
 %global _with_opencl      1
 
