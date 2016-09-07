@@ -9,7 +9,7 @@ BuildArch:	noarch
 
 Requires:	curtis-repos
 Requires:	acpi
-Requires:	systsat
+Requires:	sysstat
 Requires:	xorg-x11-xinit-session
 Requires:	perl-Env
 Requires:	anthy
