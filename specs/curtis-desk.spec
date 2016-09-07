@@ -38,7 +38,6 @@ Requires:	i3blocks
 Requires:	ibus ibus-gtk
 Requires:	libimobiledevice libimobiledevice-utils
 Requires:	intel-gpu-tools
-Requires:	intel-linux-graphics-installer
 Requires:	jack-audio-connection-kit alsa-plugins-jack pulseaudio-module-jack
 Requires:	libreoffice
 Requires:	lxappearance lxinput lxrandr lxterminal
@@ -51,7 +50,6 @@ Requires:	powertop
 Requires:	qjackctl
 Requires:	redshift
 Requires:	remmina
-#Requires:	ripit
 Requires:	seahorse
 Requires:	simple-scan
 Requires:	VirtualGL
