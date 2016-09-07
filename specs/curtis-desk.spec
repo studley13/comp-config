@@ -65,6 +65,7 @@ Requires:	font-awesome
 Requires:	ubuntu-font-family
 Requires:	gucharmap
 Requires:	faience-icon-theme
+#Requires:   texlive-scheme-full
 
 %description
 Standard desktop and GUI software
