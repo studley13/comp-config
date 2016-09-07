@@ -1,5 +1,5 @@
 Name:		curtis-host-black
-Version:	1.2
+Version:	1.4
 Release:	1.multi
 Summary:	Meta-package for installing software for host 'black'
 
@@ -13,8 +13,6 @@ Requires:	curtis-tools
 Requires:	curtis-media
 Requires:	curtis-av
 Requires:	curtis-games
-Requires:	xorg-x11-drv-nvidia-340xx
-Requires:	gstreamer1-plugins-bad-nvenc
 
 %description
 Package dependancies for Black and silver Asus S550-CM
