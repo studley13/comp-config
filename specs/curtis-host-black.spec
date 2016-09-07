@@ -15,8 +15,8 @@ Requires:	curtis-av
 Requires:	curtis-games
 Requires:	bumblebee-nvidia bbswitch-dkms
 Requires:	kernel-devel
-Requires:	VirtualGL.x86_64 VirtualGL.i686
-Requires:	primus.x86_64 primus.i686
+Requires:	VirtualGL
+Requires:	primus
 
 %description
 Package dependancies for Black and silver Asus S550-CM
