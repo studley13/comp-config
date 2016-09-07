@@ -14,9 +14,7 @@ Requires:	curtis-media
 Requires:	curtis-av
 Requires:	curtis-games
 Requires:	bbswitch-dkms
-Requires:	xorg-x11-drv-nvidia-340xx
-Requires:	xorg-x11-drv-nvidia-340xx-libs
-Requires:	xorg-x11-drv-nvidia-340xx-cuda
+Requires:	bumblebee-nvidia
 Requires:	kernel-devel
 Requires:	VirtualGL
 %if %{__isa_bits} == 64
