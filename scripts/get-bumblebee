@@ -1,0 +1,23 @@
+#!/bin/bash
+set -e
+
+# relocate
+pushd $(dirname $0) > /dev/null
+
+version="1.2"
+
+# The base url for rpm-fusion
+bumblebee="http://install.linux.ncsu.edu/pub/yum/itecs/public/bumblebee/fedora$(rpm -E %fedora)/noarch/bumblebee-release-${version}-1.noarch.rpm"
+nvidia="http://install.linux.ncsu.edu/pub/yum/itecs/public/bumblebee-nonfree/fedora$(rpm -E %fedora)/noarch/bumblebee-nonfree-release-${version}-1.noarch.rpm"
+nvidiaUnmanaged="http://install.linux.ncsu.edu/pub/yum/itecs/public/bumblebee-nonfree-unmanaged/fedora$(rpm -E %fedora)/noarch/bumblebee-nonfree-unmanaged-release-${version}-1.noarch.rpm"
+dirPrefix="../rpm/noarch"
+
+mkdir -p "${dirPrefix}"
+wget -P $bumblebee $nvidia $nvidiaUnmanaged
+
+if [ $UID -eq 0 ]; then
+    chown -R "${SUDO_USER}:${SUDO_GROUP}" "$dirPrefix"
+fi
+
+# Return to location
+popd > /dev/null

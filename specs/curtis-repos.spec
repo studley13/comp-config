@@ -1,5 +1,5 @@
 Name:		curtis-repos
-Version:	1.1
+Version:	1.2
 Release:	1.multi
 Summary:	Meta-package for installing repos
 
@@ -14,6 +14,7 @@ Requires:	skype-repo
 Requires:	vivaldi-repo
 Requires:	ntop-repo
 Requires:	handbrake-repo
+Requires:	bumblebee-release bumblebee-nonfree-release
 
 %description
 Standard repositories

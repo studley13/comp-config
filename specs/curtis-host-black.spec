@@ -1,5 +1,5 @@
 Name:		curtis-host-black
-Version:	1.4
+Version:	1.5
 Release:	1.multi
 Summary:	Meta-package for installing software for host 'black'
 
@@ -13,6 +13,10 @@ Requires:	curtis-tools
 Requires:	curtis-media
 Requires:	curtis-av
 Requires:	curtis-games
+Requires:	bumblebee-nvidia bbswitch-dkms
+Requires:	kernel-devel
+Requires:	VirtualGL.x86_64 VirtualGL.i686
+Requires:	primus.x86_64 primus.i686
 
 %description
 Package dependancies for Black and silver Asus S550-CM

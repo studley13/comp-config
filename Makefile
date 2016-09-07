@@ -20,7 +20,7 @@ REPO_SPECS=specs/handbrake-repo.spec specs/google-chrome-repo.spec\
 
 all:	update
 
-initial: rpm-fusion repo-specs update binary-specs repodata
+initial: rpm-fusion bumblebee repo-specs update binary-specs repodata
 
 update:	ubuntu-font font-awesome plex meta-specs repodata
 
@@ -34,6 +34,9 @@ $(RPM_HOME):	$S/rpm-user
 
 rpm-fusion:	$S/get-rpm-fusion
 	$S/get-rpm-fusion
+
+bumblebee:	$/get-bumblebee
+	$S/get-bumblebee
 
 plex:		$S/get-plex
 	$S/get-plex
