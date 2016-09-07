@@ -18,8 +18,14 @@ Requires:	xorg-x11-drv-nvidia-340xx
 Requires:	xorg-x11-drv-nvidia-340xx-libs
 Requires:	xorg-x11-drv-nvidia-340xx-cuda
 Requires:	kernel-devel
-Requires:	VirtualGL.x86_64 VirtualGL.i686
-Requires:	primus.x86_64 primus.i686
+Requires:	VirtualGL
+%if %{__isa_bits} == 64
+Requires: 	VirtualGL(%{__isa_name}-32)
+%endif
+Requires:	primus
+%if %{__isa_bits} == 64
+Requires: 	primus(%{__isa_name}-32)
+%endif
 
 %description
 Package dependancies for Black and silver Asus S550-CM
