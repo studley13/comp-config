@@ -19,7 +19,7 @@ Requires:	mypaint
 Requires:	rawtherapee
 #Requires:	obs-studio
 Requires:	libwacom xorg-x11-drv-wacom
-Requires:	handbrake-gui handbrake-cli
+Requires:	HandBrake-gui HandBrake-cli
 Requires:	libdvdcss
 
 %description

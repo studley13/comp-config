@@ -12,7 +12,8 @@ META_SPECS=specs/curtis-av.spec specs/curtis-desk.spec specs/curtis-games.spec\
 
 PRE_BINARY_SPECS=specs/rust.spec
 PRE32_BINARY_SPECS=specs/rust-32.spec
-BINARY_SPECS=specs/i3blocks.spec specs/playerctl.spec specs/ffmpeg.spec
+BINARY_SPECS=specs/i3blocks.spec specs/playerctl.spec
+BINARY64_SPECS=specs/ffmpeg.spec
 
 REPO_SPECS=specs/handbrake-repo.spec specs/google-chrome-repo.spec\
 	specs/ntop-repo.spec specs/skype-repo.spec specs/vivaldi-repo.spec
@@ -53,6 +54,7 @@ noarch:	ubuntu-font font-awesome meta-specs
 
 binary-specs:	$S/spec-build $(BINARY_SPECS) $(RPM_HOME)
 	$S/spec-build -b $(BINARY_SPECS)
+	$S/spec-build $(BINARY64_SPECS)
 	$S/spec-build $(PRE_BINARY_SPECS)
 	$S/spec-build -t i386 $(PRE32_BINARY_SPECS)
 
