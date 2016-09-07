@@ -35,7 +35,7 @@ $(RPM_HOME):	$S/rpm-user
 rpm-fusion:	$S/get-rpm-fusion
 	$S/get-rpm-fusion
 
-bumblebee:	$/get-bumblebee
+bumblebee:	$S/get-bumblebee
 	$S/get-bumblebee
 
 plex:		$S/get-plex
