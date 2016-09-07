@@ -25,13 +25,12 @@ Requires:	x265 x265-libs
 Requires:	libtheora
 Requires:	libaacs-utils libaacs
 Requires:	faad2 faac
-Requires:	libavdevice
 Requires:	flac flac-libs
 
 # Tools
 Requires:	ImageMagick
 Requires:	vlc vlc-plugin-jack
-Requires:	ffmpeg
+Requires:	ffmpeg >= 3.1.2-1.fc24.custom, ffmpeg-libs >= 3.1.2-1.fc24.custom, libavdevice >= 3.1.2-1.fc24.custom
 Requires:	easytag
 
 %description
