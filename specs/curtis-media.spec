@@ -1,5 +1,5 @@
 Name:		curtis-media
-Version:	1.0
+Version:	1.1
 Release:	1.multi
 Summary:	Meta-package for installing media software and codecs
 

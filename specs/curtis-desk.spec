@@ -1,5 +1,5 @@
 Name:		curtis-desk
-Version:	1.4
+Version:	1.5
 Release:	1.multi
 Summary:	Meta-package for installing desktop and GUI software
 
@@ -38,7 +38,7 @@ Requires:	i3blocks
 Requires:	ibus ibus-gtk
 Requires:	libimobiledevice libimobiledevice-utils
 Requires:	intel-gpu-tools
-#Requires:	intel-linux-graphics-installer
+Requires:	intel-linux-graphics-installer
 Requires:	jack-audio-connection-kit alsa-plugins-jack pulseaudio-module-jack
 Requires:	libreoffice
 Requires:	lxappearance lxinput lxrandr lxterminal
