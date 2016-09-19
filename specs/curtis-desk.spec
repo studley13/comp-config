@@ -55,7 +55,7 @@ Requires:	simple-scan
 Requires:	VirtualGL
 #Requires:	wine
 Requires:	dosbox
-Requires:	wireshark
+Requires:	wireshark wireshark-gtk
 Requires:	xbacklight
 Requires:	gnome-screensaver
 Requires:	network-manager-applet
@@ -63,6 +63,7 @@ Requires:	font-awesome
 Requires:	ubuntu-font-family
 Requires:	gucharmap
 Requires:	faience-icon-theme
+Requires:	hicolor-icon-theme
 Requires:   texlive-scheme-full
 
 %description

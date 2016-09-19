@@ -1,5 +1,5 @@
 Name:		curtis-tools
-Version:	1.2
+Version:	1.3
 Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
@@ -58,6 +58,7 @@ Requires:	duplicity
 Requires:	powerline ctags
 Requires:	irssi bitlbee
 Requires:	snownews
+Requires:	mailx
 
 %description
 Standard command line tools

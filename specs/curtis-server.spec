@@ -1,5 +1,5 @@
 Name:		curtis-server
-Version:	1.0
+Version:	1.1
 Release:	1.multi
 Summary:	Meta-package for installing server software
 
@@ -23,6 +23,7 @@ Requires:	ntopng
 Requires:	redis hiredis
 Requires:	ntp ntpdate
 Requires:	rsync
+Requires:	wol
 
 %description
 Server software
