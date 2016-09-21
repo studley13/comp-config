@@ -20,6 +20,7 @@ Requires:	rawtherapee
 #Requires:	obs-studio
 Requires:	libwacom xorg-x11-drv-wacom
 Requires:	HandBrake-gui HandBrake-cli
+Requires:   clementine
 Requires:	libdvdcss
 
 %description
