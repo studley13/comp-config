@@ -9,6 +9,7 @@ BuildArch:	noarch
 
 Requires:	curtis-repos
 Requires:	android-tools
+Requires:   nmap
 Requires:	httpd php fcgi mod_fcgid mod_h264_streaming
 Requires:	aspell
 Requires:	avahi
