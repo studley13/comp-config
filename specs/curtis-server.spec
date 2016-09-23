@@ -24,6 +24,7 @@ Requires:	redis hiredis
 Requires:	ntp ntpdate
 Requires:	rsync
 Requires:	wol
+Requires:	easy-rsa
 
 %description
 Server software
