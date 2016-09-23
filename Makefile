@@ -20,9 +20,12 @@ REPO_SPECS=specs/handbrake-repo.spec specs/google-chrome-repo.spec\
 
 all:	update
 
-initial: rpm-fusion bumblebee repo-specs update binary-specs repodata
+initial: pull rpm-fusion bumblebee repo-specs update binary-specs repodata
 
-update:	ubuntu-font font-awesome plex meta-specs repodata
+update:	pull ubuntu-font font-awesome plex meta-specs repodata
+
+pull:
+	git pull
 
 clean:
 	rm -rf rpm

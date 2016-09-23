@@ -9,11 +9,11 @@ BuildArch:	noarch
 
 Requires:	curtis-repos
 Requires:	android-tools
-Requires:   nmap
+Requires:	nmap
 Requires:	httpd php fcgi mod_fcgid mod_h264_streaming
 Requires:	aspell
 Requires:	avahi
-Requires:	bash zsh bash-completion tmux tree
+Requires:	bash zsh bash-completion tmux tree screen
 Requires:	bind-utils
 Requires:	bindfs fuse-sshfs ftp
 Requires:	nfs-utils
