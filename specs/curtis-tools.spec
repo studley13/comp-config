@@ -60,6 +60,7 @@ Requires:	powerline ctags
 Requires:	irssi bitlbee
 Requires:	snownews
 Requires:	mailx
+Requires:   youtube-dl
 
 %description
 Standard command line tools
