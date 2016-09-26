@@ -53,7 +53,7 @@ Requires:	socat nc6 telnet
 Requires:	tcpdump 
 Requires:	traceroute whois
 Requires:	vagrant
-Requires:	VirtualBox
+Requires:	VirtualBox dkms kernel-devel kernel-headers
 Requires:	xclip
 Requires:	duplicity
 Requires:	powerline ctags
