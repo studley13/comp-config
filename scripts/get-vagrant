@@ -1,0 +1,23 @@
+#!/bin/bash
+set -e
+
+# relocate
+pushd $(dirname $0) > /dev/null
+
+# The base url for rpm-fusion
+version=1.8.6
+dirPrefix="../rpm/"
+arches=("i686" "x86_64")
+
+for arch in ${arches[@]}; do 
+	pkg="https://releases.hashicorp.com/vagrant/$version/vagrant_${version}_${arch}.rpm"
+	mkdir -p "${dirPrefix}/$arch"
+	wget -p -O "${dirPrefix}/$arch/$(basename $pkg)" $pkg
+done
+
+if [ $UID -eq 0 ]; then
+    chown -R "${SUDO_USER}:${SUDO_GROUP}" "$dirPrefix"
+fi
+
+# Return to location
+popd > /dev/null

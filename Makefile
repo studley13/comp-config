@@ -50,6 +50,9 @@ ubuntu-font:	$S/build-ubuntu-font $(RPM_HOME)
 font-awesome:	$S/build-font-awesome $(RPM_HOME)
 	$S/build-font-awesome
 
+vagrant: $S/get-vagrant
+	$S/get-vagrant
+
 meta-specs:	$S/spec-build $(META_SPECS) $(RPM_HOME)
 	$S/spec-build $(META_SPECS)
 
