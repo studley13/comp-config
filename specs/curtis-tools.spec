@@ -52,7 +52,7 @@ Requires:	rsync
 Requires:	socat nc6 telnet
 Requires:	tcpdump 
 Requires:	traceroute whois
-Requires:	vagrant
+Requires:	vagrant libvirt
 Requires:	VirtualBox dkms kernel-devel kernel-headers
 Requires:	xclip
 Requires:	duplicity
