@@ -1,5 +1,5 @@
 Name:		curtis-tools
-Version:	1.3
+Version:	1.5.1
 Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
@@ -19,7 +19,7 @@ Requires:	bindfs fuse-sshfs ftp
 Requires:	nfs-utils
 Requires:	binwalk
 Requires:	bzip2 gzip zip unzip unrar tar
-Requires:	clang llvm
+Requires:	clang llvm lldb python-lldb
 Requires:	rustc
 Requires:	java-1.8.0-openjdk
 Requires:	wget curl
@@ -53,7 +53,8 @@ Requires:	socat nc6 telnet
 Requires:	tcpdump 
 Requires:	traceroute whois
 Requires:	vagrant libvirt vagrant-libvirt
-Requires:	VirtualBox dkms kernel-devel kernel-headers
+Requires:	VirtualBox kmod-virtualbox
+Requires:	dkms kernel-devel kernel-headers
 Requires:	xclip
 Requires:	duplicity
 Requires:	powerline ctags
