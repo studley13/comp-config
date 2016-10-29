@@ -61,7 +61,8 @@ Requires:	powerline ctags
 Requires:	irssi bitlbee
 Requires:	snownews
 Requires:	mailx
-Requires:   youtube-dl
+Requires:	youtube-dl
+Requires:	wkhtmltopdf
 
 %description
 Standard command line tools
