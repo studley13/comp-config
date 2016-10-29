@@ -1,5 +1,5 @@
 Name:		curtis-tools
-Version:	1.5.1
+Version:	1.5.2
 Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
