@@ -1,5 +1,5 @@
 Name:		curtis-desk
-Version:	1.5
+Version:	1.5.1
 Release:	1.multi
 Summary:	Meta-package for installing desktop and GUI software
 
@@ -64,7 +64,8 @@ Requires:	ubuntu-font-family
 Requires:	gucharmap
 Requires:	faience-icon-theme
 Requires:	hicolor-icon-theme
-Requires:   texlive-scheme-full
+Requires:   	texlive-scheme-full
+Requires:	workrave-gtk2
 
 %description
 Standard desktop and GUI software
