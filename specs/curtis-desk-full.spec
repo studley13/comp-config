@@ -1,5 +1,5 @@
 Name:		curtis-desk-full
-Version:	1.2
+Version:	1.2.1
 Release:	1.multi
 Summary:	Meta-package for installing desktop and GUI software
 
@@ -13,6 +13,7 @@ Requires:	chrome-remote-desktop
 Requires:	google-chrome-stable
 Requires:	skypeforlinux
 Requires:	vivaldi-stable
+Requires:	exfat-utils fuse-exfat
 
 %description
 Standard desktop and GUI software
