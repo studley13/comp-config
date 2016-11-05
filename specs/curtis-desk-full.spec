@@ -1,5 +1,5 @@
 Name:		curtis-desk-full
-Version:	1.2.1
+Version:	1.2.2
 Release:	1.multi
 Summary:	Meta-package for installing desktop and GUI software
 
@@ -14,6 +14,7 @@ Requires:	google-chrome-stable
 Requires:	skypeforlinux
 Requires:	vivaldi-stable
 Requires:	exfat-utils fuse-exfat
+Requires:	google-android-emoji-fonts
 
 %description
 Standard desktop and GUI software
