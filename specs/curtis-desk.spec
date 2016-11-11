@@ -1,5 +1,5 @@
 Name:		curtis-desk
-Version:	1.5.1
+Version:	1.5.2
 Release:	1.multi
 Summary:	Meta-package for installing desktop and GUI software
 
@@ -66,6 +66,7 @@ Requires:	faience-icon-theme
 Requires:	hicolor-icon-theme
 Requires:   	texlive-scheme-full
 Requires:	workrave-gtk2
+Requires:	xcompmgr
 
 %description
 Standard desktop and GUI software

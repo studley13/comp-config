@@ -14,7 +14,7 @@ Requires:	google-chrome-stable
 Requires:	skypeforlinux
 Requires:	vivaldi-stable
 Requires:	exfat-utils fuse-exfat
-Requires:	google-android-emoji-fonts
+Requires:	google-android-emoji-fonts google-noto-sans-fonts google-noto-emoji-fonts
 
 %description
 Standard desktop and GUI software
