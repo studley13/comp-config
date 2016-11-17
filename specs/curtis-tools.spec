@@ -1,5 +1,5 @@
 Name:		curtis-tools
-Version:	1.5.2
+Version:	1.5.3
 Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
@@ -63,6 +63,7 @@ Requires:	snownews
 Requires:	mailx
 Requires:	youtube-dl
 Requires:	wkhtmltopdf
+Requires:	pv
 
 %description
 Standard command line tools
