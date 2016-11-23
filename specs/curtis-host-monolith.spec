@@ -1,5 +1,5 @@
 Name:		curtis-host-monolith
-Version:	1.1.3
+Version:	1.1.4
 Release:	1.multi
 Summary:	Meta-package for installing software for host 'monolith'
 
