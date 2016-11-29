@@ -7,6 +7,7 @@ META_SPECS=specs/curtis-av.spec specs/curtis-desk.spec specs/curtis-games.spec\
 	specs/curtis-host-black.spec specs/curtis-host-blue.spec\
 	specs/curtis-host-core.spec specs/curtis-host-monolith.spec\
 	specs/curtis-host-silver.spec specs/curtis-media.spec\
+	specs/curtis-host-matte.spec\
 	specs/curtis-repos.spec specs/curtis-server.spec\
 	specs/curtis-tools.spec specs/curtis-desk-full.spec 
 
