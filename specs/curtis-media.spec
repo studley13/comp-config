@@ -1,5 +1,5 @@
 Name:		curtis-media
-Version:	1.2.1
+Version:	1.2.2
 Release:	1.multi
 Summary:	Meta-package for installing media software and codecs
 
@@ -35,6 +35,7 @@ Requires:	vlc vlc-plugin-jack
 Requires:	ffmpeg >= 3.1.2-1.fc24.custom, ffmpeg-libs >= 3.1.2-1.fc24.custom, libavdevice >= 3.1.2-1.fc24.custom
 Requires:	easytag
 Requires:	mpv
+Requires:	v4l-utils
 
 %description
 Software and codecs for audio and video
