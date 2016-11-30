@@ -1,5 +1,5 @@
 Name:		curtis-desk
-Version:	1.5.2
+Version:	1.5.3
 Release:	1.multi
 Summary:	Meta-package for installing desktop and GUI software
 
@@ -46,7 +46,7 @@ Requires:	nitrogen
 Requires:	numlockx
 Requires:	pavucontrol
 Requires:	playerctl
-Requires:	powertop
+Requires:	powertop tlp thinkfan
 Requires:	qjackctl
 Requires:	redshift
 Requires:	remmina
