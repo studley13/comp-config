@@ -1,5 +1,5 @@
 Name:		curtis-av
-Version:	1.1.1
+Version:	1.2.0
 Release:	1.multi
 Summary:	Meta-package for installing AV software
 

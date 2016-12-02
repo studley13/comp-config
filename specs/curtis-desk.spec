@@ -1,5 +1,5 @@
 Name:		curtis-desk
-Version:	1.5.3
+Version:	1.6.0
 Release:	1.multi
 Summary:	Meta-package for installing desktop and GUI software
 

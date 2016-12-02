@@ -1,5 +1,5 @@
 Name:		curtis-host-matte
-Version:	1.1
+Version:	1.2
 Release:	1.multi
 Summary:	Meta-package for installing software for host 'matte'
 

@@ -1,5 +1,5 @@
 Name:		curtis-host-black
-Version:	1.7
+Version:	1.8
 Release:	1.multi
 Summary:	Meta-package for installing software for host 'black'
 

@@ -1,5 +1,5 @@
 Name:		curtis-repos
-Version:	1.2
+Version:	1.0
 Release:	1.multi
 Summary:	Meta-package for installing repos
 
