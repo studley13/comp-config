@@ -1,5 +1,5 @@
 Name:		curtis-tools
-Version:	1.5.5
+Version:	1.5.6
 Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
@@ -19,8 +19,10 @@ Requires:	bindfs fuse-sshfs ftp
 Requires:	nfs-utils
 Requires:	binwalk
 Requires:	bzip2 gzip zip unzip unrar tar
+Requires: 	python-devel python3-devel automake
+Requires:	gcc gcc-c++ kernel-devel cmake
 Requires:	clang llvm lldb python-lldb
-Requires:	rustc
+Requires:	rustc cargo
 Requires:	java-1.8.0-openjdk
 Requires:	wget curl
 Requires:	docker
@@ -58,7 +60,7 @@ Requires:	VirtualBox kmod-VirtualBox
 Requires:	dkms kernel-devel kernel-headers
 Requires:	xclip
 Requires:	duplicity
-Requires:	powerline ctags
+Requires:	powerline ctags vim-powerline powerline-fonts tmux-powerline
 Requires:	irssi bitlbee
 Requires:	snownews
 Requires:	mailx
