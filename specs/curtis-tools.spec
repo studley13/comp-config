@@ -1,5 +1,5 @@
 Name:		curtis-tools
-Version:	1.5.6
+Version:	1.5.7
 Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
@@ -22,7 +22,7 @@ Requires:	bzip2 gzip zip unzip unrar tar
 Requires: 	python-devel python3-devel automake
 Requires:	gcc gcc-c++ kernel-devel cmake
 Requires:	clang llvm lldb python-lldb
-Requires:	rustc cargo
+Requires:	rust cargo
 Requires:	java-1.8.0-openjdk
 Requires:	wget curl
 Requires:	docker
