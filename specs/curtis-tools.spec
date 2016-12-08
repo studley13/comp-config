@@ -1,5 +1,5 @@
 Name:		curtis-tools
-Version:	1.6.0
+Version:	1.6.1
 Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
@@ -31,7 +31,7 @@ Requires:	genisoimage
 Requires:	haskell-platform
 Requires:	dhex
 Requires:	ghostscript
-Requires:	git
+Requires:	git tig
 Requires:	gnupg gnupg2
 Requires:	gnuplot gnuplot-wx
 Requires:	htop

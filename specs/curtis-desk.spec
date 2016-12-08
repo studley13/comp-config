@@ -1,5 +1,5 @@
 Name:		curtis-desk
-Version:	1.6.0
+Version:	1.6.1
 Release:	1.multi
 Summary:	Meta-package for installing desktop and GUI software
 
@@ -67,6 +67,7 @@ Requires:	hicolor-icon-theme
 Requires:   	texlive-scheme-full
 Requires:	workrave-gtk2
 Requires:	xcompmgr
+Requires:	gitg
 
 %description
 Standard desktop and GUI software
