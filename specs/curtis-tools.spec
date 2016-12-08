@@ -1,5 +1,5 @@
 Name:		curtis-tools
-Version:	1.6.1
+Version:	1.6.2
 Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
@@ -50,6 +50,7 @@ Requires:	protobuf protobuf-c protobuf-vim protobuf-java protobuf-python
 Requires:	python-cryptominisat4
 Requires:	python2-markdown2 python-beautifulsoup4
 Requires:	python-pypng python2-rjsmin
+Requires:	python2-jinja2 PyYAML
 Requires:	redis hiredis
 Requires:	rsync
 Requires:	socat nc6 telnet
