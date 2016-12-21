@@ -1,5 +1,5 @@
 Name:		curtis-desk-full
-Version:	1.3.0
+Version:	1.3.1
 Release:	1.multi
 Summary:	Meta-package for installing desktop and GUI software
 
@@ -13,7 +13,6 @@ Requires:	chrome-remote-desktop
 Requires:	google-chrome-stable
 Requires:	skypeforlinux
 Requires:	vivaldi-stable
-Requires:	exfat-utils fuse-exfat
 Requires:	google-android-emoji-fonts google-noto-sans-fonts google-noto-emoji-fonts
 Requires:	anki
 

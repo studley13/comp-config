@@ -1,5 +1,5 @@
 Name:		curtis-tools
-Version:	1.6.2
+Version:	1.6.3
 Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
@@ -68,6 +68,7 @@ Requires:	mailx
 Requires:	youtube-dl
 Requires:	wkhtmltopdf
 Requires:	pv
+Requires:	exfat-utils fuse-exfat
 
 %description
 Standard command line tools
