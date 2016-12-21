@@ -15,7 +15,7 @@ Requires:	curtis-av
 Requires:	curtis-games
 #Requires:	xorg-x11-drv-nvidia kmod-nvidia
 Requires:	gstreamer1-plugins-bad-nvenc
-Requires:	dkms-nvidia nvidia-driver nvidia-driver-cuda nvidia-driver-libs.i686
+Requires:	dkms-nvidia nvidia-driver nvidia-driver-cuda nvidia-driver-libs.i686 kernel-devel
 Requires:	vulkan.i686 cuda nvidia-driver-cuda-libs.i686
 
 %description
