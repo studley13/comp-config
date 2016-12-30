@@ -1,5 +1,5 @@
 Name:		curtis-av
-Version:	1.2.0
+Version:	1.2.1
 Release:	1.multi
 Summary:	Meta-package for installing AV software
 
@@ -19,7 +19,7 @@ Requires:	mypaint
 Requires:	rawtherapee
 Requires:	obs-studio
 Requires:	libwacom xorg-x11-drv-wacom
-Requires:	HandBrake-gui HandBrake-cli
+Requires:	HandBrake-gui HandBrake-cli makemkv
 Requires:  	clementine
 Requires:	libdvdcss
 

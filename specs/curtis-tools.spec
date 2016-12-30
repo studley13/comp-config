@@ -1,5 +1,5 @@
 Name:		curtis-tools
-Version:	1.6.3
+Version:	1.6.4
 Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
@@ -15,7 +15,7 @@ Requires:	aspell aspell-en
 Requires:	avahi
 Requires:	bash zsh bash-completion tmux tree screen
 Requires:	bind-utils
-Requires:	bindfs fuse-sshfs ftp
+Requires:	bindfs fuse-sshfs ftp f3
 Requires:	nfs-utils
 Requires:	binwalk
 Requires:	bzip2 gzip zip unzip unrar tar
@@ -31,7 +31,7 @@ Requires:	genisoimage
 Requires:	haskell-platform
 Requires:	dhex
 Requires:	ghostscript
-Requires:	git tig
+Requires:	git tig hub
 Requires:	gnupg gnupg2
 Requires:	gnuplot gnuplot-wx
 Requires:	htop
