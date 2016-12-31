@@ -1,5 +1,5 @@
 Name:		curtis-tools
-Version:	1.6.4
+Version:	1.6.5
 Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
@@ -69,6 +69,7 @@ Requires:	youtube-dl
 Requires:	wkhtmltopdf
 Requires:	pv
 Requires:	exfat-utils fuse-exfat
+Requires:	pdfgrep
 
 %description
 Standard command line tools
