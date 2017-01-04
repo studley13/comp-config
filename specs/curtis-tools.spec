@@ -1,5 +1,5 @@
 Name:		curtis-tools
-Version:	1.6.7
+Version:	1.6.8
 Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
@@ -56,7 +56,7 @@ Requires:	rsync
 Requires:	socat nc6 telnet
 Requires:	tcpdump 
 Requires:	traceroute whois
-Requires:	vagrant libvirt vagrant-libvirt vagrant-lxc lxc
+Requires:	vagrant libvirt vagrant-libvirt vagrant-lxc lxc lxc-templates lxc-extra debootstrap libvirt
 Requires:	VirtualBox kmod-VirtualBox
 Requires:	dkms kernel-devel kernel-headers
 Requires:	xclip
