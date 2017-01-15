@@ -1,5 +1,5 @@
 Name:		curtis-host-black
-Version:	1.10.1
+Version:	1.10.3
 Release:	1.multi
 Summary:	Meta-package for installing software for host 'black'
 
@@ -14,7 +14,7 @@ Requires:	curtis-media
 Requires:	curtis-av
 Requires:	curtis-games
 #Requires:	bbswitch-dkms
-#Requires:	gstreamer1-plugins-bad-nvenc
+Requires:	gstreamer1-plugins-bad-nvenc cuda cuda-libs
 #Requires:	bumblebee-nvidia dkms-nvidia nvidia-driver nvidia-driver-cuda
 #Requires:	nvidia-driver-cuda-libs(x86-32) nvidia-driver-libs(x86-32) vulkan(x86-32)
 Requires:	kernel-devel
