@@ -1,5 +1,5 @@
 Name:		curtis-host-monolith
-Version:	1.3.0
+Version:	1.3.1
 Release:	1.multi
 Summary:	Meta-package for installing software for host 'monolith'
 
@@ -15,8 +15,8 @@ Requires:	curtis-av
 Requires:	curtis-games
 #Requires:	xorg-x11-drv-nvidia kmod-nvidia
 Requires:	gstreamer1-plugins-bad-nvenc
-Requires:	dkms-nvidia nvidia-driver nvidia-driver-cuda nvidia-driver-libs.i686 kernel-devel
-Requires:	vulkan.i686 cuda nvidia-driver-cuda-libs.i686
+Requires:	dkms-nvidia nvidia-driver nvidia-driver-cuda nvidia-driver-libs(x86-32) kernel-devel
+Requires:	vulkan(x86-32) cuda nvidia-driver-cuda-libs(x86-32)
 
 %description
 Package dependancies for tower

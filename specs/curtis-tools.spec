@@ -1,5 +1,5 @@
 Name:		curtis-tools
-Version:	1.6.8
+Version:	1.6.9
 Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
@@ -71,6 +71,7 @@ Requires:	pv
 Requires:	exfat-utils fuse-exfat
 Requires:	pdfgrep
 Requires:	links lynx
+Requires:	rubygem-jekyll rubygem-bundler coffee-script rubygem-coffee-script ruby-devel
 
 %description
 Standard command line tools
