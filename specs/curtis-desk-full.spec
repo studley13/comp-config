@@ -1,5 +1,5 @@
 Name:		curtis-desk-full
-Version:	1.3.1
+Version:	1.3.2
 Release:	1.multi
 Summary:	Meta-package for installing desktop and GUI software
 
@@ -15,6 +15,7 @@ Requires:	skypeforlinux
 Requires:	vivaldi-stable
 Requires:	google-android-emoji-fonts google-noto-sans-fonts google-noto-emoji-fonts
 Requires:	anki
+Requires:	VirtualBox kmod-VirtualBox
 
 %description
 Standard desktop and GUI software
