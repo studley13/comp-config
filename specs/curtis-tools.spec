@@ -1,5 +1,5 @@
 Name:		curtis-tools
-Version:	1.6.12
+Version:	1.6.13
 Release:	1.multi
 Summary:	Meta-package for installing Custom tools
 
@@ -47,7 +47,7 @@ Requires:	openssh-server openssh-clients openssh
 Requires:	partimage
 Requires:	qphotorec
 Requires:	protobuf protobuf-c protobuf-vim protobuf-java protobuf-python
-Requires:	python-cryptominisat4
+Requires:	python-cryptominisat4 python2-crypto
 Requires:	python2-markdown2 python-beautifulsoup4
 Requires:	python-pypng python2-rjsmin
 Requires:	python2-jinja2 PyYAML
