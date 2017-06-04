@@ -56,7 +56,7 @@ Requires:	rsync
 Requires:	socat nc6 telnet
 Requires:	tcpdump 
 Requires:	traceroute whois
-Requires:	vagrant libvirt vagrant-libvirt vagrant-lxc lxc lxc-templates lxc-extra debootstrap libvirt
+Requires:	lxc lxc-templates lxc-extra debootstrap libvirt
 Requires:	dkms kernel-devel kernel-headers
 Requires:	xclip
 Requires:	duplicity
