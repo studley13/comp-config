@@ -7,7 +7,9 @@ Group:		Games
 License:	GPLv3
 URL:		https://www.technicpack.net/modpack/tekkitmain.552547
 
-BuildRequires: git make
+BuildRequires:  git make
+Requires(pre):  shadow-utils
+Requires(post): systemd
 Requires:	java-1.8.0-openjdk systemd
 
 %global _prefix /usr/local
@@ -25,25 +27,31 @@ git clone http://github.com/studley13/tekkit-server %{name}
 cd %{name}
 make all
 
-%install
-# Add user and group
-groupadd -r tekkit
-useradd -r -g tekkit -d "/var/%{name}" -s "/bin/sh" tekkit
+%pre
+getent group tekkit >/dev/null || groupadd -r tekkit
+getent passwd tekkit >/dev/null || \
+    useradd -r -g tekkit -d "/var/${name}" -s /sbin/nologin \
+    -c "Tekkit server" tekkit
+exit 0
 
+%install
 # Copy Files
-mkdir -p "/var/%{name}/"
-cp -rv %{name}/* "/var/%{name}/"
-chown -R tekkit:tekkit "/var/%{name}"
+mkdir -p  "%{buildroot}/var/"
+cp -rv %{name} "%{buildroot}/var/%{name}"
+rm -rf %{buildroot}/var/%{name}/.{git,gitignore}
 
 # Copy service and reload
-mkdir -p /etc/systemd/system
-cp %{name}/tekkit.service /etc/systemd/system
+mkdir -p "%{buildroot}/etc/systemd/system"
+cp %{name}/tekkit.service "%{buildroot}/etc/systemd/system/tekkit.service"
+
+%post
 systemctl daemon-reload
 
 %files
-%doc
-/var/%{name}/*
-/etc/systemd/system/tekkit.service
+%defattr(0600, tekkit, tekkit)
+%attr(0700, tekkit, tekkit) /var/%{name}/tekkit
+/var/%{name}/
+%attr(0644, root, root) /etc/systemd/system/tekkit.service
 
 %changelog
 * Sat Aug 13 2016 Curtis Millar <rpm@curtism.me> - 1.0
