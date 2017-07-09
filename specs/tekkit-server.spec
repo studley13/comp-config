@@ -9,7 +9,7 @@ URL:		https://www.technicpack.net/modpack/tekkitmain.552547
 
 BuildRequires:  git make
 Requires(pre):  shadow-utils
-Requires(post): systemd
+Requires(post): systemd, policycoreutils-python
 Requires:	java-1.8.0-openjdk systemd
 
 %global _prefix /usr/local
@@ -46,7 +46,12 @@ cp %{name}/tekkit.service "%{buildroot}/etc/systemd/system/tekkit.service"
 
 %post
 systemctl daemon-reload
-cd "/var/%{name}" && make server.properties
+semanage fcontext -a -t var_t '/var/%{name}' 2> /dev/null || :
+semanage fcontext -a -t bin_t '/var/%{name}/tekkit' 2> /dev/null || :
+semanage fcontext -a -t bin_t '/var/%{name}/mcrcon' 2> /dev/null || :
+cd "/var/%{name}" && make server.properties && chown tekkit:tekkit server.properties
+semanage fcontext -a -u system_u -t var_t '/var/%{name}/system.properties' 2> /dev/null || :
+restorecon -R "/var/%{name}" || :
 
 %files
 %defattr(0644, tekkit, tekkit)
