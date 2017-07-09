@@ -25,7 +25,7 @@ git clone http://github.com/studley13/tekkit-server %{name}
 
 %build
 cd %{name}
-make all
+make mcrcon
 
 %pre
 getent group tekkit >/dev/null || groupadd -r tekkit
@@ -46,10 +46,12 @@ cp %{name}/tekkit.service "%{buildroot}/etc/systemd/system/tekkit.service"
 
 %post
 systemctl daemon-reload
+cd "/var/%{name}" && make server.properties
 
 %files
-%defattr(0600, tekkit, tekkit)
-%attr(0700, tekkit, tekkit) /var/%{name}/tekkit
+%defattr(0644, tekkit, tekkit)
+%attr(0744, tekkit, tekkit) /var/%{name}/tekkit
+%attr(0744, tekkit, tekkit) /var/%{name}/mcrcon
 /var/%{name}/
 %attr(0644, root, root) /etc/systemd/system/tekkit.service
 
