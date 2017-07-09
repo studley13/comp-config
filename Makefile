@@ -13,7 +13,7 @@ META_SPECS=specs/curtis-av.spec specs/curtis-desk.spec specs/curtis-games.spec\
 
 PRE_BINARY_SPECS=specs/rust.spec
 PRE32_BINARY_SPECS=specs/rust-32.spec
-BINARY_SPECS=specs/i3blocks.spec specs/playerctl.spec
+BINARY_SPECS=specs/i3blocks.spec specs/playerctl.spec specs/tekkit-server.spec
 BINARY64_SPECS=specs/ffmpeg.spec
 
 REPO_SPECS=specs/handbrake-repo.spec specs/google-chrome-repo.spec\
