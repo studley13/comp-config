@@ -15,7 +15,7 @@ rpmuser="makerpm"
 pushd "$tempdir" > /dev/null
 
 baseUrl="http://fontawesome.io/"
-curl -Ls "$baseUrl" | grep -o "[^\"]*\.zip" | wget -i - -B "$baseUrl"
+curl -Ls --compressed "$baseUrl" | grep -o "[^\"]*\.zip" | wget -i - -B "$baseUrl"
 
 name="font-awesome"
 file="$(ls | grep "$name")"
